@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller'),
+		url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?2d52e6dbd74939147fa8341594f762a5') format('woff2'),
+		url('/assets/templates/projectsoft/fonts/MullerBlack.woff?2d52e6dbd74939147fa8341594f762a5') format('woff'),
+		url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?2d52e6dbd74939147fa8341594f762a5') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
