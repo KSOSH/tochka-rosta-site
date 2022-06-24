@@ -1,6 +1,37 @@
 header.head
-	.content.clearfix
+	.container.clearfix
 		.logotips
-			a(href="[(site_url)]")
-				img(src="[(site_url)]" alt="Точка Роста ГБОУ СОШ пос. Комсомольский")
-			img(src="[(site_url)]" alt="Образование. Национальны проекты России")
+			span.logotips-logotip
+				a(href="[(site_url)]")
+					img(src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="Точка Роста ГБОУ СОШ пос. Комсомольский")
+			.logotips-text
+				p.text-center
+					strong
+						|ГБОУ СОШ пос. Комсомольский
+						br
+						|муниципального района Кинельский Самарской области
+			span.logotips-project
+				img(src="[(site_url)]assets/templates/projectsoft/images/project.png" alt="Образование. Национальны проекты России")
+	.container-full.navigation
+		.row
+			.container.navigation-menu
+				.navigation-menu-button
+					|{{@FILE assets/templates/projectsoft/images/burger.svg}}
+				.navigation-menu-wrapper
+					nav
+						ul
+							li
+								a(href="[(site_url)]")
+									|Главная
+							li
+								span
+									|Новости
+							li
+								a(href="[(site_url)]")
+									|Документы
+							li
+								a(href="[(site_url)]")
+									|Фотогалерея
+							li
+								a(href="[(site_url)]")
+									|Контакты

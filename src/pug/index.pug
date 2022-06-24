@@ -2,7 +2,9 @@ doctype html
 html(lang="ru")
 	|{{@FILE assets/templates/projectsoft/tpl/head.html}}
 	body.clearfix
-		h1
-			|[*pagetitle*]
-		a(href="[(site_url)]")
-			|[(site_url)]
+		|{{@FILE assets/templates/projectsoft/tpl/header.html}}
+		//h1
+		//	|[*pagetitle*]
+		//a(href="[(site_url)]")
+		//	|[(site_url)]
+		|{{@FILE assets/templates/projectsoft/tpl/closebody.html}}

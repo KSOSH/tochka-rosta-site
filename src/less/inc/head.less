@@ -5,6 +5,54 @@ header {
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-between;
+			&-logotip,
+			&-project,
+			&-text {
+				user-select: none;
+				display: block;
+				flex: auto;
+			}
+			&-text {
+				padding-left: @padding;
+				padding-right: @padding;
+				order: 1;
+				p {
+					margin-top: 1em;
+				}
+			}
+			&-logotip,
+			&-project {
+				max-width: 250px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			&-logotip {
+				order: 0;
+				.text-left();
+			}
+			&-project{
+				order: 2;
+				.text-right();
+			}
+			@media (max-width: 680px) {
+				flex-wrap: wrap;
+				&-logotip,
+				&-project {
+					img {
+						max-width: 162px;
+					}
+				}
+				&-logotip {
+					order: 1;
+				}
+				&-project {
+					order: 2;
+				}
+				&-text {
+					order: 0;
+					flex: 1 0 auto;
+				}
+			}
 		}
 	}
 }

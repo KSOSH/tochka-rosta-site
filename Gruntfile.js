@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 		fontvers: "1.0.0",
 		assets: "assets/templates/projectsoft",
 		default: [
-			"clean:all",
+			"clean",
 			"concat",
 			"uglify",
 			"webfont",
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		less: [
-			"clean:all",
+			"clean",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -50,14 +50,14 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		js: [
-			"clean:all",
+			"clean",
 			"concat",
 			"uglify",
 			"copy:js",
 			"pug"
 		],
 		pug: [
-			"clean:all",
+			"clean",
 			"pug"
 		],
 		images: [
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		fonts: [
-			"clean:all",
+			"clean",
 			"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		glyph: [
-			"clean:all",
+			"clean",
 			"webfont",
 			"ttf2eot",
 			"ttf2woff",
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		speed: [
-			"clean:all",
+			"clean",
 			"concat",
 			"uglify",
 			"less",
@@ -494,4 +494,18 @@ module.exports = function(grunt) {
 	grunt.registerTask('fonts',		gc.fonts);
 	grunt.registerTask('html',		gc.pug);
 	grunt.registerTask('speed',		gc.speed);
+	grunt.registerTask('work', [
+		"clean:all",
+		"concat",
+		"uglify",
+		"imagemin",
+		"tinyimg",
+		"less",
+		"autoprefixer",
+		"group_css_media_queries",
+		"replace",
+		"cssmin",
+		"copy",
+		"pug"
+	]);
 };

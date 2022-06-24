@@ -271,14 +271,14 @@
 }
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?7d3c5402b8da737dc9a61b1c0f9f78f3') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?99e815e6935a7c19c664374c7742af48') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?99e815e6935a7c19c664374c7742af48') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?99e815e6935a7c19c664374c7742af48') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arial.woff2?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?7d3c5402b8da737dc9a61b1c0f9f78f3') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arial.woff2?99e815e6935a7c19c664374c7742af48') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?99e815e6935a7c19c664374c7742af48') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?99e815e6935a7c19c664374c7742af48') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -286,7 +286,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/ariali.woff2?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?7d3c5402b8da737dc9a61b1c0f9f78f3') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/ariali.woff2?99e815e6935a7c19c664374c7742af48') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?99e815e6935a7c19c664374c7742af48') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?99e815e6935a7c19c664374c7742af48') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -294,7 +294,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?7d3c5402b8da737dc9a61b1c0f9f78f3') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?99e815e6935a7c19c664374c7742af48') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?99e815e6935a7c19c664374c7742af48') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?99e815e6935a7c19c664374c7742af48') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -302,7 +302,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?7d3c5402b8da737dc9a61b1c0f9f78f3') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?7d3c5402b8da737dc9a61b1c0f9f78f3') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?99e815e6935a7c19c664374c7742af48') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?99e815e6935a7c19c664374c7742af48') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?99e815e6935a7c19c664374c7742af48') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -2772,11 +2772,33 @@ body.compensate-for-scrollbar {
   clear: both;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 html,
 body {
   margin: 0;
   min-height: 100vh;
   color: #323e48;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
 a {
@@ -2793,31 +2815,75 @@ a:focus-visible {
   outline: none;
 }
 
-.content {
-  max-width: 1200px;
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
-.content-full {
-  width: 100%;
+img {
+  max-width: 100%;
 }
 
-.content:before,
-.content:after {
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:before,
+.row:after {
   display: table;
   content: " ";
 }
 
-.content:after {
+.row:after {
   clear: both;
 }
 
-.content:before,
-.content:after {
+.row:before,
+.row:after {
   content: "";
   display: table;
 }
 
-.content:after {
+.row:after {
+  clear: both;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container,
+.container-full {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:before,
+.container-full:before,
+.container:after,
+.container-full:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-full:after {
+  clear: both;
+}
+
+.container:before,
+.container-full:before,
+.container:after,
+.container-full:after {
+  content: "";
+  display: table;
+}
+
+.container:after,
+.container-full:after {
   clear: both;
 }
 
@@ -2830,6 +2896,123 @@ header.head .logotips {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+header.head .logotips-logotip,
+header.head .logotips-project,
+header.head .logotips-text {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+header.head .logotips-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+header.head .logotips-text p {
+  margin-top: 1em;
+}
+
+header.head .logotips-logotip,
+header.head .logotips-project {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header.head .logotips-logotip {
+  -ms-flex-order: 0;
+  order: 0;
+  text-align: left;
+}
+
+header.head .logotips-project {
+  -ms-flex-order: 2;
+  order: 2;
+  text-align: right;
+}
+
+.navigation {
+  background-color: #333e48;
+}
+
+.navigation a,
+.navigation span,
+.navigation li,
+.navigation svg {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navigation span {
+  background-color: #ffffff;
+  color: #333e48;
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.navigation a:hover {
+  background-color: #ffffff;
+  color: #333e48;
+}
+
+.navigation a,
+.navigation span {
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1.1em;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  box-shadow: inset 0 0 2px #fff;
+  text-align: center;
+  filter: none !important;
+  outline: 0 !important;
+}
+
+.navigation-menu-button {
+  width: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  display: none;
+}
+
+.navigation-menu-button.open + .navigation-menu-wrapper ul {
+  height: 100%;
+}
+
+.navigation-menu .svg___burger {
+  fill: #ffffff;
+}
+
+.navigation-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.navigation-menu ul li {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  -ms-flex: auto;
+  flex: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -3041,5 +3224,53 @@ header.head .logotips {
 
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px);
+  }
+}
+
+@media (max-width: 680px) {
+  header.head .logotips {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  header.head .logotips-logotip img,
+  header.head .logotips-project img {
+    max-width: 162px;
+  }
+
+  header.head .logotips-logotip {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  header.head .logotips-project {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  header.head .logotips-text {
+    -ms-flex-order: 0;
+    order: 0;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+
+  .navigation-menu-button {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .navigation-menu ul li a,
+  .navigation-menu ul li span {
+    text-align: left;
   }
 }
