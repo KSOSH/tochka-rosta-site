@@ -5,6 +5,7 @@ test.*
 /.htaccess
 /.*
 /*.ini
+
 /node_modules/**/*
 /bower_components/**/*
 /test/**/*
@@ -100,6 +101,7 @@ comps/**/*
 /assets/comon/js/Hyphenopoly/**/*
 
 !.gitignore
+!favicon.ico
 !assets/tvs/multitv/configs/univers.config.inc.php
 !assets/tvs/multitv/configs/photogallery.config.inc.php
 !assets/tvs/multitv/configs/govlist.config.inc.php
