@@ -1,0 +1,24 @@
+html,
+body {
+	margin: 0;
+	min-height: 100vh;
+	color: @color1;
+}
+a {
+	color: @color2;
+	&:hover {
+		color: @color3;
+	}
+	*,
+	&:focus,
+	&:focus-visible {
+		outline: none;
+	}
+}
+.content {
+	max-width: 1200px;
+	&-full {
+		width: 100%;
+	}
+	.clearfix();
+}

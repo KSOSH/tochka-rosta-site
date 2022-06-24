@@ -271,14 +271,14 @@
 }
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?d58ba5f778e2c031b1b4b95215269080') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?d58ba5f778e2c031b1b4b95215269080') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?d58ba5f778e2c031b1b4b95215269080') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?681058d36fa91a9ded2b325f2813d1ff') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?681058d36fa91a9ded2b325f2813d1ff') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?681058d36fa91a9ded2b325f2813d1ff') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arial.woff2?d58ba5f778e2c031b1b4b95215269080') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?d58ba5f778e2c031b1b4b95215269080') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?d58ba5f778e2c031b1b4b95215269080') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arial.woff2?681058d36fa91a9ded2b325f2813d1ff') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?681058d36fa91a9ded2b325f2813d1ff') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?681058d36fa91a9ded2b325f2813d1ff') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -286,7 +286,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/ariali.woff2?d58ba5f778e2c031b1b4b95215269080') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?d58ba5f778e2c031b1b4b95215269080') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?d58ba5f778e2c031b1b4b95215269080') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/ariali.woff2?681058d36fa91a9ded2b325f2813d1ff') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?681058d36fa91a9ded2b325f2813d1ff') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?681058d36fa91a9ded2b325f2813d1ff') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -294,7 +294,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?d58ba5f778e2c031b1b4b95215269080') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?d58ba5f778e2c031b1b4b95215269080') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?d58ba5f778e2c031b1b4b95215269080') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?681058d36fa91a9ded2b325f2813d1ff') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?681058d36fa91a9ded2b325f2813d1ff') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?681058d36fa91a9ded2b325f2813d1ff') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -302,7 +302,7 @@
 
 @font-face {
   font-family: 'Arial';
-  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?d58ba5f778e2c031b1b4b95215269080') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?d58ba5f778e2c031b1b4b95215269080') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?d58ba5f778e2c031b1b4b95215269080') format('truetype');
+  src: local('Arial'), local('Arial'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?681058d36fa91a9ded2b325f2813d1ff') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?681058d36fa91a9ded2b325f2813d1ff') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?681058d36fa91a9ded2b325f2813d1ff') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -2758,6 +2758,78 @@ body.compensate-for-scrollbar {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+.clearfix:before,
+.clearfix:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after,
+.form-horizontal .form-group:after {
+  clear: both;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #323e48;
+}
+
+a {
+  color: #ed1c24;
+}
+
+a:hover {
+  color: #ffbea9;
+}
+
+a *,
+a:focus,
+a:focus-visible {
+  outline: none;
+}
+
+.content {
+  max-width: 1200px;
+}
+
+.content-full {
+  width: 100%;
+}
+
+.content:before,
+.content:after {
+  display: table;
+  content: " ";
+}
+
+.content:after {
+  clear: both;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+}
+
+.content:after {
+  clear: both;
+}
+
+header.head .logotips {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {

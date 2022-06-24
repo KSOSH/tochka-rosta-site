@@ -376,6 +376,14 @@ module.exports = function(grunt) {
 					'**'
 				],
 				dest: '<%= globalConfig.assets %>/js/',
+			},
+			favicons: {
+				expand: true,
+				cwd: 'src/favicons',
+				src: [
+					'**'
+				],
+				dest: __dirname,
 			}
 		},
 		pug: {
