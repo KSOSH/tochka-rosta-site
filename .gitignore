@@ -6,6 +6,14 @@ test.*
 /.*
 /*.ini
 
+/android-chrome*
+/apple-touch*
+/favicon*
+/browserconf*
+/site*
+/safari*
+/mstile*
+
 /node_modules/**/*
 /bower_components/**/*
 /test/**/*
