@@ -11,13 +11,19 @@ header {
 				user-select: none;
 				display: block;
 				flex: auto;
+				max-width: 100%;
+				p {
+					max-width: 100%;
+				}
 			}
 			&-text {
 				padding-left: @padding;
 				padding-right: @padding;
 				order: 1;
+				.text-center();
 				p {
 					margin-top: 1em;
+					font-size: 1.2em;
 				}
 			}
 			&-logotip,
@@ -39,7 +45,7 @@ header {
 				&-logotip,
 				&-project {
 					img {
-						max-width: 162px;
+						max-width: 100%;
 					}
 				}
 				&-logotip {
@@ -47,10 +53,33 @@ header {
 				}
 				&-project {
 					order: 2;
+					max-width: 90px;
 				}
 				&-text {
 					order: 0;
 					flex: 1 0 auto;
+				}
+			}
+			@media (max-width: 500px) {
+				&-logotip,
+				&-project {
+					min-width: 100%;
+					.text-center();
+				}
+				&-logotip {
+					img {
+						max-width: 100%;
+					}
+				}
+				&-project {
+					img {
+						max-width: 90px;
+					}
+				}
+				&-text {
+					p {
+						font-size: .8em;
+					}
 				}
 			}
 		}

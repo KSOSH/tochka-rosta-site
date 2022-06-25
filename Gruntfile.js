@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 			"clean",
 			"concat",
 			"uglify",
-			"copy:js",
+			"copy",
 			"pug"
 		],
 		pug: [
@@ -99,8 +99,6 @@ module.exports = function(grunt) {
 		],
 		speed: [
 			"clean",
-			"concat",
-			"uglify",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -219,10 +217,6 @@ module.exports = function(grunt) {
 						'hashes': '\'' + uniqid() + '\'',
 						'fontpath': '/<%= globalConfig.assets %>/fonts',
 						'imgpath': '/<%= globalConfig.assets %>/images',
-						'white': '#ffffff',
-						'bg-color': '#0098ff',
-						'white': '#ffffff',
-						'padding': '15px',
 					}
 				},
 				files : {

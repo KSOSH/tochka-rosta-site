@@ -1,0 +1,17 @@
+main.main
+	.container.main-wrapper
+		.row
+			.container-full
+				h1
+					|[*pagetitle*]
+	|<@IF:[*content:isNotEmpty*]>
+	.container.main-wrapper
+		.row
+			.container-full
+				|[*content*]
+	|<@ENDIF>
+	.container.main-wrapper
+		.row
+			.container-full
+				h2.text-center
+					|Новости

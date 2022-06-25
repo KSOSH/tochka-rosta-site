@@ -2,7 +2,22 @@ html,
 body {
 	margin: 0;
 	min-height: 100vh;
+}
+body {
+	font-family: 'ArialSite', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
 	color: @color1;
+	background-color: @bgColor;
+	display: flex;
+	flex-direction: column;
+	footer,
+	header {
+		flex: 0;
+	}
+	main {
+		flex: 1 0 auto;
+	}
 }
 *,
 *:after,
@@ -20,10 +35,34 @@ a {
 		outline: none;
 	}
 }
+strong,
+b {
+	font-weight: 700;
+}
 p {
 	margin-top: 0;
 	margin-bottom: 1em;
 }
 img {
 	max-width: 100%;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+h1:after {
+	content: "";
+	display: block;
+	box-shadow: inset 0 0 2px #333e48;
+	height: 1px;
+	width: 100%;
+	min-width: 150px;
+	margin-left: 15px;
+	flex: 1;
+	@media (max-width: 680px) {
+		display: none;
+	}
 }

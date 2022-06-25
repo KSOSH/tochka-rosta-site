@@ -110,6 +110,8 @@ comps/**/*
 
 !.gitignore
 !favicon.ico
+!assets/tvs/multitv/configs/carausel.config.inc.php
+
 !assets/tvs/multitv/configs/univers.config.inc.php
 !assets/tvs/multitv/configs/photogallery.config.inc.php
 !assets/tvs/multitv/configs/govlist.config.inc.php
@@ -118,7 +120,6 @@ comps/**/*
 !assets/tvs/multitv/configs/siteschool.config.inc.php
 !assets/tvs/multitv/configs/files.config.inc.php
 !assets/tvs/multitv/configs/share.config.inc.php
-!assets/tvs/multitv/configs/carausel_global.config.inc.php
 !assets/tvs/multitv/configs/carausel_growing_point.config.inc.php
 !assets/tvs/multitv/configs/carausel_9may.config.inc.php
 !assets/tvs/multitv/configs/distfiles.config.inc.php

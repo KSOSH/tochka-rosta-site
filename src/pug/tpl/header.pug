@@ -5,33 +5,50 @@ header.head
 				a(href="[(site_url)]")
 					img(src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="Точка Роста ГБОУ СОШ пос. Комсомольский")
 			.logotips-text
-				p.text-center
+				p
 					strong
 						|ГБОУ СОШ пос. Комсомольский
 						br
 						|муниципального района Кинельский Самарской области
 			span.logotips-project
 				img(src="[(site_url)]assets/templates/projectsoft/images/project.png" alt="Образование. Национальны проекты России")
+	|<@IF:[*id:is('[(site_start)]')*]>
+	|[[multiTV? 
+	|	&fromJson=`[(carausel)]` 
+	|	&tvName=`carausel`
+	|	&display=`all`
+	|]]
+	|<@ENDIF>
 	.container-full.navigation
 		.row
 			.container.navigation-menu
 				.navigation-menu-button
 					|{{@FILE assets/templates/projectsoft/images/burger.svg}}
-				.navigation-menu-wrapper
+				.navigation-menu-wrapper.row
 					nav
-						ul
-							li
-								a(href="[(site_url)]")
-									|Главная
-							li
-								span
-									|Новости
-							li
-								a(href="[(site_url)]")
-									|Документы
-							li
-								a(href="[(site_url)]")
-									|Фотогалерея
-							li
-								a(href="[(site_url)]")
-									|Контакты
+						|[[DLMenu?
+						|	&parents=`0`
+						|	&maxDepth=`1`
+						|	&showParent=`0`
+						|	&urlScheme=`full`
+						|	&ownerTPL=`@CODE: <ul>[+dl.wrap+]</ul>`
+						|	&rowTpl=`@CODE: <li><a href="[+url+]"[+classes+] [+link_attributes+]>[+title+]</a></li>`
+						|	&rowHereTpl=`@CODE: <li><span[+classes+]>[+title+]</span></li>`
+						|	&rowClass=``
+						|	&firstClass=``
+						|	&lastClass=``
+						|	&levelClass=``
+						|	&webLinkClass=``
+						|	&parentClass=``
+						|	&hereClass=`active`
+						|	&activeClass=`active`
+						|	&oddClass=``
+						|	&evenClass=``
+						|]]
+		|<@IF:[*id:is('[(site_start)]')*]>
+		|  
+		|<@ELSE>
+		.row.breadcrumbs
+			.container
+				|[[DLCrumbs &showCurrent=`1`]]
+		|<@ENDIF>

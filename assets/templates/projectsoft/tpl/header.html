@@ -3,26 +3,49 @@
 	<div class="container clearfix">
 		<div class="logotips"><span class="logotips-logotip"><a href="[(site_url)]"><img src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="Точка Роста ГБОУ СОШ пос. Комсомольский"/></a></span>
 			<div class="logotips-text">
-				<p class="text-center"><strong>ГБОУ СОШ пос. Комсомольский<br/>муниципального района Кинельский Самарской области</strong></p>
+				<p><strong>ГБОУ СОШ пос. Комсомольский<br/>муниципального района Кинельский Самарской области</strong></p>
 			</div><span class="logotips-project"><img src="[(site_url)]assets/templates/projectsoft/images/project.png" alt="Образование. Национальны проекты России"/></span>
 		</div>
-	</div>
+	</div><@IF:[*id:is('[(site_start)]')*]>
+	[[multiTV? 
+		&fromJson=`[(carausel)]` 
+		&tvName=`carausel`
+		&display=`all`
+	]]
+	<@ENDIF>
 	<div class="container-full navigation">
 		<div class="row">
 			<div class="container navigation-menu">
 				<div class="navigation-menu-button">{{@FILE assets/templates/projectsoft/images/burger.svg}}</div>
-				<div class="navigation-menu-wrapper">
+				<div class="navigation-menu-wrapper row">
 					<nav>
-						<ul>
-							<li><a href="[(site_url)]">Главная</a></li>
-							<li><span>Новости</span></li>
-							<li><a href="[(site_url)]">Документы</a></li>
-							<li><a href="[(site_url)]">Фотогалерея</a></li>
-							<li><a href="[(site_url)]">Контакты</a></li>
-						</ul>
+						[[DLMenu?
+							&parents=`0`
+							&maxDepth=`1`
+							&showParent=`0`
+							&urlScheme=`full`
+							&ownerTPL=`@CODE: <ul>[+dl.wrap+]</ul>`
+							&rowTpl=`@CODE: <li><a href="[+url+]"[+classes+] [+link_attributes+]>[+title+]</a></li>`
+							&rowHereTpl=`@CODE: <li><span[+classes+]>[+title+]</span></li>`
+							&rowClass=``
+							&firstClass=``
+							&lastClass=``
+							&levelClass=``
+							&webLinkClass=``
+							&parentClass=``
+							&hereClass=`active`
+							&activeClass=`active`
+							&oddClass=``
+							&evenClass=``
+						]]
 					</nav>
 				</div>
 			</div>
-		</div>
+		</div><@IF:[*id:is('[(site_start)]')*]>
+		 
+		<@ELSE>
+		<div class="row breadcrumbs">
+			<div class="container">[[DLCrumbs &showCurrent=`1`]]</div>
+		</div><@ENDIF>
 	</div>
 </header>
