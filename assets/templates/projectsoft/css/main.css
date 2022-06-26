@@ -271,14 +271,14 @@
 }
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?a4da971d4727ec9eadd7374d4c03cc78') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?a4da971d4727ec9eadd7374d4c03cc78') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?a4da971d4727ec9eadd7374d4c03cc78') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?c3a43b6e05e7ab560f571ed1e23f8d3a') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?a4da971d4727ec9eadd7374d4c03cc78') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?a4da971d4727ec9eadd7374d4c03cc78') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?a4da971d4727ec9eadd7374d4c03cc78') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?c3a43b6e05e7ab560f571ed1e23f8d3a') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -286,7 +286,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?a4da971d4727ec9eadd7374d4c03cc78') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?a4da971d4727ec9eadd7374d4c03cc78') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?a4da971d4727ec9eadd7374d4c03cc78') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?c3a43b6e05e7ab560f571ed1e23f8d3a') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -294,7 +294,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?a4da971d4727ec9eadd7374d4c03cc78') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?a4da971d4727ec9eadd7374d4c03cc78') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?a4da971d4727ec9eadd7374d4c03cc78') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?c3a43b6e05e7ab560f571ed1e23f8d3a') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -302,7 +302,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?a4da971d4727ec9eadd7374d4c03cc78') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?a4da971d4727ec9eadd7374d4c03cc78') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?a4da971d4727ec9eadd7374d4c03cc78') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?c3a43b6e05e7ab560f571ed1e23f8d3a') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?c3a43b6e05e7ab560f571ed1e23f8d3a') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -2792,6 +2792,52 @@ body.compensate-for-scrollbar {
   text-align: justify;
 }
 
+.btn {
+  background-color: #ed1c24;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 1px solid #ed1c24;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-decoration: none;
+  border-radius: unset;
+  box-shadow: unset;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ed1c24;
+  background-color: #ffffff;
+}
+
+.btn.active,
+.btn.active.focus,
+.btn.active:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+.btn.focus,
+.btn.focus:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+.btn:active,
+.btn:active:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
 html,
 body {
   margin: 0;
@@ -2832,7 +2878,7 @@ a {
 }
 
 a:hover {
-  color: #ffbea9;
+  color: #323e48;
 }
 
 a *,
@@ -2876,6 +2922,57 @@ h1:after {
   margin-left: 15px;
   -ms-flex: 1;
   flex: 1;
+}
+
+h2.lines,
+h3.lines,
+h4.lines,
+h5.lines,
+h6.lines {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex: 100%;
+  flex: 100%;
+}
+
+h2.lines:before,
+h3.lines:before,
+h4.lines:before,
+h5.lines:before,
+h6.lines:before,
+h2.lines:after,
+h3.lines:after,
+h4.lines:after,
+h5.lines:after,
+h6.lines:after {
+  content: "";
+  display: block;
+  box-shadow: inset 0 0 2px #333e48;
+  height: 1px;
+  width: 100%;
+  min-width: 150px;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+h2.lines:before,
+h3.lines:before,
+h4.lines:before,
+h5.lines:before,
+h6.lines:before {
+  margin-right: 15px;
+}
+
+h2.lines:after,
+h3.lines:after,
+h4.lines:after,
+h5.lines:after,
+h6.lines:after {
+  margin-left: 15px;
 }
 
 .row {
@@ -2939,6 +3036,11 @@ h1:after {
 .container:after,
 .container-full:after {
   clear: both;
+}
+
+.container > p:last-child,
+.container-full > p:last-child {
+  margin-bottom: unset;
 }
 
 header.head .logotips {
@@ -3118,7 +3220,7 @@ header.head .logotips-project {
   display: block;
   text-decoration: none;
   padding: 15px;
-  box-shadow: inset 0 0 1px #ffffff;
+  box-shadow: inset 0 0 1px #333e48;
   text-align: center;
   filter: none !important;
   outline: 0 !important;
@@ -3190,7 +3292,7 @@ header.head .logotips-project {
 }
 
 .breadcrumbs {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .breadcrumbs .breadcrumb {
@@ -3238,7 +3340,16 @@ header.head .logotips-project {
 
 .breadcrumbs .breadcrumb li a,
 .breadcrumbs .breadcrumb li span {
+  text-align: left;
   box-shadow: none;
+}
+
+.breadcrumbs .breadcrumb li a span {
+  color: #ed1c24;
+}
+
+.breadcrumbs .breadcrumb li a:hover span {
+  color: #ffbea9;
 }
 
 .home .slick-slider-item {
@@ -3266,6 +3377,7 @@ header.head .logotips-project {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  box-shadow: 0 0 5px #d3d3d3;
 }
 
 @media screen and (max-width: 767px) {
@@ -3482,6 +3594,19 @@ header.head .logotips-project {
 
 @media (max-width: 680px) {
   h1:after {
+    display: none;
+  }
+
+  h2.lines:before,
+  h3.lines:before,
+  h4.lines:before,
+  h5.lines:before,
+  h6.lines:before,
+  h2.lines:after,
+  h3.lines:after,
+  h4.lines:after,
+  h5.lines:after,
+  h6.lines:after {
     display: none;
   }
 

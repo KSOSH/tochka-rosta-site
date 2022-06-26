@@ -37,6 +37,7 @@
 							&activeClass=`active`
 							&oddClass=``
 							&evenClass=``
+							&debug=`[(debug)]`
 						]]
 					</nav>
 				</div>
@@ -45,7 +46,12 @@
 		 
 		<@ELSE>
 		<div class="row breadcrumbs">
-			<div class="container">[[DLCrumbs &showCurrent=`1`]]</div>
+			<div class="container">
+				[[DLCrumbs?
+					&showCurrent=`1`
+					&debug=`[(debug)]`
+				]]
+			</div>
 		</div><@ENDIF>
 	</div>
 </header>

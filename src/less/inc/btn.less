@@ -1,0 +1,45 @@
+.btn {
+	background-color: @red;
+	color: @white;
+	transition: all .3s ease;
+	border: 1px solid @red;
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		border-radius: unset;
+		box-shadow: unset;
+	}
+	&:hover,
+	&:focus {
+		color: @red;
+		background-color: @white;
+	}
+	&.active {
+		&,
+		&.focus,
+		&:focus {
+			outline: 0 !important;
+			outline-offset: 0 !important;
+		}
+	}
+	&.focus {
+		&,
+		&:focus {
+			outline: 0 !important;
+			outline-offset: 0 !important;
+		}
+	}
+	&:active {
+		&,
+		&:focus {
+			outline: 0 !important;
+			outline-offset: 0 !important;
+		}
+	}
+	&:focus {
+		outline: 0 !important;
+		outline-offset: 0 !important;
+	}
+}

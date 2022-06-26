@@ -44,11 +44,15 @@ header.head
 						|	&activeClass=`active`
 						|	&oddClass=``
 						|	&evenClass=``
+						|	&debug=`[(debug)]`
 						|]]
 		|<@IF:[*id:is('[(site_start)]')*]>
 		|  
 		|<@ELSE>
 		.row.breadcrumbs
 			.container
-				|[[DLCrumbs &showCurrent=`1`]]
+				|[[DLCrumbs?
+				|	&showCurrent=`1`
+				|	&debug=`[(debug)]`
+				|]]
 		|<@ENDIF>

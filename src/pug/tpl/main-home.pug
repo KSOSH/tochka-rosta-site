@@ -1,17 +1,32 @@
 main.main
-	.container.main-wrapper
+	header.container.main-wrapper
 		.row
 			.container-full
 				h1
 					|[*pagetitle*]
 	|<@IF:[*content:isNotEmpty*]>
-	.container.main-wrapper
+	article.container.main-wrapper
 		.row
 			.container-full
 				|[*content*]
 	|<@ENDIF>
-	.container.main-wrapper
-		.row
-			.container-full
-				h2.text-center
-					|Новости
+	|<@IF:[*id:is('[(site_start)]')*]>
+	|[[DocLister?
+	|	&parents=`6`
+	|	&display=`5`
+	|	&tvList=`imageSoc, news_date`
+	|	&tvPrefix=``
+	|	&orderBy=`news_date DESC`
+	|	&sortBy=`news_date`
+	|	&sortDir=`DESC`
+	|	&tvSortType=`TVDATETIME`
+	|	&prepare=`\ProjectSoft\PrepareDL::prepareItem`
+	|	&noneTPL=`@CODE:<span></span>`
+	|	&ownerTPL=`@FILE:projectsoft/tpl/home_news`
+	|	&tpl=`@FILE:projectsoft/tpl/news_tpl`
+	|	&showParent=`0`
+	|	&urlScheme=`full`
+	|	&noneWrapOuter=`0`
+	|	&&debug=`[(debug)]`
+	|]]
+	<@ENDIF>

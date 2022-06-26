@@ -1,5 +1,5 @@
 .breadcrumbs {
-	background-color: @bgBreadcrumb;
+	background-color: @bgColor;
 	.breadcrumb {
 		background-color: unset;
 		border-radius: 0;
@@ -31,7 +31,18 @@
 			}
 			a,
 			span {
+				.text-left();
 				box-shadow: none;
+			}
+			a {
+				span {
+					color: @color2;
+				}
+				&:hover {
+					span {
+						color: @color3;
+					}
+				}
 			}
 		}
 	}
