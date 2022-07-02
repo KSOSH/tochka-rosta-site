@@ -1,6 +1,10 @@
 .footer {
 	background-color: @bgFooter;
 	color: @colorFooter;
+	p {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
 	a {
 		&,
 		&:hover {
@@ -27,7 +31,6 @@
 	&-right,
 	&-center {
 		p {
-			margin-top: 1em;
 			max-width: 100%;
 		}
 	}
@@ -37,6 +40,7 @@
 			font-size: 1.2em;
 			font-family: Muller;
 			text-transform: uppercase;
+			font-weight: 900;
 		}
 		p:last-child {
 			margin-bottom: 0;
@@ -57,6 +61,15 @@
 	}
 	.developer {
 		font-size: .7em;
+	}
+	.cookies-link {
+		font-size: 0.8em;
+	}
+	.rss-link {
+		font-size: 2em;
+		a {
+			text-decoration: none !important;
+		}
 	}
 	@media (max-width: 680px) {
 		&-flex {

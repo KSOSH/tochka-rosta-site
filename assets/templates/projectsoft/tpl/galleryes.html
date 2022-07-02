@@ -1,0 +1,46 @@
+
+<main class="main">
+	<header class="container main-wrapper">
+		<div class="row">
+			<div class="container-full hyphenation">
+				<h1>[*pagetitle*]</h1>
+			</div>
+		</div>
+	</header><@IF:[*content:isNotEmpty*]>
+	<article class="container main-wrapper">
+		<div class="row">
+			<div class="container-full hyphenation text-justify">[*content*]</div>
+		</div>
+	</article><@ENDIF>
+	[[DocLister?
+		&parents=`[*id*]`
+		&display=`12`
+		&tvList=`imageSoc, news_date`
+		&tvPrefix=``
+		&orderBy=`news_date DESC`
+		&sortBy=`news_date`
+		&sortDir=`DESC`
+		&tvSortType=`TVDATETIME`
+		&prepare=`\ProjectSoft\PrepareDL::prepareItem`
+		&noneTPL=`@CODE:<span></span>`
+		&ownerTPL=`@FILE:projectsoft/tpl/galleryes_out`
+		&tpl=`@FILE:projectsoft/tpl/galleryes_tpl`
+		&showParent=`0`
+		&urlScheme=`full`
+		&noneWrapOuter=`0`
+		&&debug=`[(debug)]`
+	  &PrevNextAlwaysShow=`1`
+	  &paginate=`pages`
+	  &paginationMeta=`1`
+	  &TplWrapPaginate=`@CODE: <div class="container main-wrapper"><div class="row"><div class="container-full text-center"><ul class="pagination">[+wrap+]</ul></div></div></div>`
+	  &TplNextP=`@CODE: <li class="pagination--item next"><a role="button" class="icon-next" href="[+link+]"></a></li>`
+	  &TplNextI=`@CODE: <li class="pagination--item next disabled"><span role="button" class="icon-next"></span></li>`
+	  &TplPrevP=`@CODE: <li class="pagination--item prev"><a role="button" class="icon-prev" href="[+link+]"></a></li>`
+	  &TplPrevI=`@CODE: <li class="pagination--item prev disabled"><span role="button" class="icon-prev"></span></li>`
+	  &TplPage=`@CODE: <li class="pagination--item"><a role="button" href="[+link+]">[+num+]</a></li>`
+	  &TplCurrentPage=`@CODE: <li class="pagination--item active"><span role="button">[+num+]</span></li>`
+	  &TplDotsPage=`@CODE:<li class="pagination--item dots"><span role="button">...</span></li>`
+	]]
+	[+pages+]
+	{{@FILE assets/templates/projectsoft/tpl/govlist.html}}
+</main>

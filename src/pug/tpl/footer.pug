@@ -7,13 +7,20 @@ footer.footer
 					.footer-item.footer-right
 					.footer-item.footer-center
 						p.text-center
-							span
-								|©  
 							strong
 								|Точка Роста
+							|  ©  
+							span
+								|2020 - [!$_SERVER['REQUEST_TIME']:dateFormat('Y')!]
 							br
 							|ГБОУ СОШ пос. Комсомольский
+						p.cookies-link
+							a(href="[(site_url)]")
+								|Правила пользования файлов cookie
+						p.rss-link
+							a.icon-rss(href="[(site_url)]" target="_blank")
 						p.developer.text-center
-							|Developer:  
-							a(href="https://github.com/ProjectSoft-STUDIONIONS" target="_blank")
-								|ProjectSoft
+							small
+								|Developer:  
+								a(href="https://github.com/ProjectSoft-STUDIONIONS" target="_blank")
+									|ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat('Y')!]

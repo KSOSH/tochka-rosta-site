@@ -1,0 +1,33 @@
+a.bvi-open {
+	position: absolute;
+	//right: 15px;
+	//top: 6px;
+	font-size: 25px;
+	&, &:active {
+		text-decoration: none;
+	}
+	&:hover {
+		//text-decoration: underline;
+	}
+	.icon-eye {
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: nowrap;
+		&::after {
+			content: attr(data-title);
+			margin-right: @padding;
+			margin-left: unset;
+			font-size: 16px;
+			font-family: 'ArialSite', Arial, sans-serif;
+		}
+	}
+}
+a.bvi-panel-close {
+	position: absolute;
+	z-index: 10;
+	//top: 6px;
+	//right: @padding;
+}
+html body .bvi-panel {
+	margin-bottom: 0 !important;
+}

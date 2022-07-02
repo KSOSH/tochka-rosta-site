@@ -1,21 +1,21 @@
-article.container.main-wrapper
-	.row.news-item
-		.container-full
+article.container.main-wrapper.text-justify
+	.row
+		.container-full.news-item
 			header
 				h3.news-item-title
 					|<a class="hyphenation" href="[+url+]" [+link_attributes+]>
 					|	[+title+]
 					|</a>
-			time(datetime="[+news_date+]")
+			time.icon-calendar(datetime="[+news_date+]")
 				|[+out_date+]
 			.news-item-description
 				p.news-item-photo
 					|<a href="[+url+]" [+link_attributes+]>
 					|	<img src="[[thumb? &input=`[+imageSoc+]` &options=`w=751,h=422,zc=C`]]" alt="[+alt+]">
 					|</a>
-				p.text
+				p.news-item-text
 					span.text-wrapper.hyphenation
 						|[+introtext:nl2br+]
-				|<a class="btn" href="[+url+]" [+link_attributes+]>
-				|	Подробнее
-				|</a>
+					|<a class="btn" href="[+url+]" [+link_attributes+]>
+					|	Подробнее
+					|</a>

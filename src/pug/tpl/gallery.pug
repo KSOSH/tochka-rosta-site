@@ -1,0 +1,28 @@
+main.main
+	header.container.main-wrapper
+		.row
+			.container-full.hyphenation
+				h1
+					|[*pagetitle*]
+	article
+		|<@IF:[*content:isNotEmpty*]>
+		.container.main-wrapper
+			.row
+				.container-full.hyphenation.text-justify
+					|[*content*]<@ENDIF>
+		.container.main-wrapper
+			.row.photogalleryes
+				.container-full.hyphenation.text-justify
+					p.article-time
+						time.icon-calendar(datetime="[*news_date*]")
+							|[[aDate? &date=`[*news_date*]`]] года
+					|[[multiTV?
+					|	&tvName=`photogallery`
+					|	&docid=`[*id*]`
+					|	&display=`all`
+					|	&emptyOutput=`1`
+					|]]
+					p.article-autor
+						strong
+							|[*news_person*]
+	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}

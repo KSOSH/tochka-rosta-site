@@ -128,6 +128,16 @@ module.exports = function(grunt) {
 				separator: "\n",
 			},
 			appjs: {
+				/*
+					"src/js/core.js",
+					"src/js/media.js",
+					"src/js/guestures.js",
+					"src/js/slideshow.js",
+					"src/js/fullscreen.js",
+					"src/js/thumbs.js",
+					"src/js/hash.js",
+					"src/js/wheel.js"
+				*/
 				src: [
 					'bower_components/jquery/dist/jquery.js',
 					"bower_components/fancybox/src/js/core.js",
@@ -157,7 +167,7 @@ module.exports = function(grunt) {
 				sourceMap: false,
 				compress: {
 					drop_console: true
-	  			}
+				}
 			},
 			app: {
 				files: [

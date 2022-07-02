@@ -1,0 +1,36 @@
+.govlist {
+	margin-left: -@padding;
+	margin-right: -@padding;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	&-item {
+		padding: 15px;
+		width: 100%;
+		max-width: 235px;
+		&-image {
+			a {
+				display: block;
+				text-decoration: none !important;
+				img {
+					width: 100%;
+					display: block;
+					transform-origin: center center;
+					transition: all .3s ease;
+					transform: scale(1.0);
+					box-shadow: 0 0 1px #b5b5b5;
+				}
+				&:hover {
+					img {
+						transform: scale(1.1);
+						box-shadow: 0 0 2px #b5b5b5;
+					}
+				}
+			}
+		}
+	}
+}

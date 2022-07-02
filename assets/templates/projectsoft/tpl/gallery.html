@@ -1,0 +1,32 @@
+
+<main class="main">
+	<header class="container main-wrapper">
+		<div class="row">
+			<div class="container-full hyphenation">
+				<h1>[*pagetitle*]</h1>
+			</div>
+		</div>
+	</header>
+	<article><@IF:[*content:isNotEmpty*]>
+		<div class="container main-wrapper">
+			<div class="row">
+				<div class="container-full hyphenation text-justify">[*content*]<@ENDIF></div>
+			</div>
+		</div>
+		<div class="container main-wrapper">
+			<div class="row photogalleryes">
+				<div class="container-full hyphenation text-justify">
+					<p class="article-time">
+						<time class="icon-calendar" datetime="[*news_date*]">[[aDate? &date=`[*news_date*]`]] года</time>
+					</p>[[multiTV?
+						&tvName=`photogallery`
+						&docid=`[*id*]`
+						&display=`all`
+						&emptyOutput=`1`
+					]]
+					<p class="article-autor"><strong>[*news_person*]</strong></p>
+				</div>
+			</div>
+		</div>
+	</article>{{@FILE assets/templates/projectsoft/tpl/govlist.html}}
+</main>

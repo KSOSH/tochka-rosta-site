@@ -1,13 +1,13 @@
 main.main
 	header.container.main-wrapper
 		.row
-			.container-full
+			.container-full.hyphenation
 				h1
 					|[*pagetitle*]
 	|<@IF:[*content:isNotEmpty*]>
 	article.container.main-wrapper
 		.row
-			.container-full
+			.container-full.hyphenation.text-justify
 				|[*content*]
 	|<@ENDIF>
 	|<@IF:[*id:is('[(site_start)]')*]>
@@ -30,3 +30,4 @@ main.main
 	|	&&debug=`[(debug)]`
 	|]]
 	<@ENDIF>
+	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}

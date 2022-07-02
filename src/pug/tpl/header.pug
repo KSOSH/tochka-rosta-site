@@ -1,9 +1,16 @@
 header.head
 	.container.clearfix
+		div.bvi-site-buttons.container-fluid.text-right
+			a.bvi-open(href="/#" title="Версия для слабовидящих")
+				i.icon-eye(data-title="Версия для слабовидящих")
 		.logotips
 			span.logotips-logotip
+				|<@IF:[*id:is('[(site_start)]')*]>
+				img(src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="«Точка Роста» ГБОУ СОШ пос. Комсомольский")
+				|<@ELSE>
 				a(href="[(site_url)]")
-					img(src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="Точка Роста ГБОУ СОШ пос. Комсомольский")
+					img(src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="«Точка Роста» ГБОУ СОШ пос. Комсомольский")
+				|<@ENDIF>
 			.logotips-text
 				p
 					strong
@@ -49,7 +56,7 @@ header.head
 		|<@IF:[*id:is('[(site_start)]')*]>
 		|  
 		|<@ELSE>
-		.row.breadcrumbs
+		.row.breadcrumbs.hyphenation
 			.container
 				|[[DLCrumbs?
 				|	&showCurrent=`1`

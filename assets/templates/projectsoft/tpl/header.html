@@ -1,7 +1,8 @@
 
 <header class="head">
 	<div class="container clearfix">
-		<div class="logotips"><span class="logotips-logotip"><a href="[(site_url)]"><img src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="Точка Роста ГБОУ СОШ пос. Комсомольский"/></a></span>
+		<div class="bvi-site-buttons container-fluid text-right"><a class="bvi-open" href="/#" title="Версия для слабовидящих"><i class="icon-eye" data-title="Версия для слабовидящих"></i></a></div>
+		<div class="logotips"><span class="logotips-logotip"><@IF:[*id:is('[(site_start)]')*]><img src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="«Точка Роста» ГБОУ СОШ пос. Комсомольский"/><@ELSE><a href="[(site_url)]"><img src="[(site_url)]assets/templates/projectsoft/images/logotip.png" alt="«Точка Роста» ГБОУ СОШ пос. Комсомольский"/></a><@ENDIF></span>
 			<div class="logotips-text">
 				<p><strong>ГБОУ СОШ пос. Комсомольский<br/>муниципального района Кинельский Самарской области</strong></p>
 			</div><span class="logotips-project"><img src="[(site_url)]assets/templates/projectsoft/images/project.png" alt="Образование. Национальны проекты России"/></span>
@@ -45,7 +46,7 @@
 		</div><@IF:[*id:is('[(site_start)]')*]>
 		 
 		<@ELSE>
-		<div class="row breadcrumbs">
+		<div class="row breadcrumbs hyphenation">
 			<div class="container">
 				[[DLCrumbs?
 					&showCurrent=`1`

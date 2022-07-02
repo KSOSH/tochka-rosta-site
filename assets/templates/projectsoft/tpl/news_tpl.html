@@ -1,7 +1,7 @@
 
-<article class="container main-wrapper">
-	<div class="row news-item">
-		<div class="container-full">
+<article class="container main-wrapper text-justify">
+	<div class="row">
+		<div class="container-full news-item">
 			<header>
 				<h3 class="news-item-title">
 					<a class="hyphenation" href="[+url+]" [+link_attributes+]>
@@ -9,16 +9,17 @@
 					</a>
 				</h3>
 			</header>
-			<time datetime="[+news_date+]">[+out_date+]</time>
+			<time class="icon-calendar" datetime="[+news_date+]">[+out_date+]</time>
 			<div class="news-item-description">
 				<p class="news-item-photo">
 					<a href="[+url+]" [+link_attributes+]>
 						<img src="[[thumb? &input=`[+imageSoc+]` &options=`w=751,h=422,zc=C`]]" alt="[+alt+]">
 					</a>
 				</p>
-				<p class="text"><span class="text-wrapper hyphenation">[+introtext:nl2br+]</span></p><a class="btn" href="[+url+]" [+link_attributes+]>
-					Подробнее
-				</a>
+				<p class="news-item-text"><span class="text-wrapper hyphenation">[+introtext:nl2br+]</span><a class="btn" href="[+url+]" [+link_attributes+]>
+						Подробнее
+					</a>
+				</p>
 			</div>
 		</div>
 	</div>
