@@ -1,0 +1,17 @@
+main.main
+	header.container.main-wrapper
+		.row
+			.container-full.hyphenation
+				h1
+					|[*pagetitle*]
+	article.container.main-wrapper
+		.row
+			.container-full.hyphenation.text-justify
+				|[*content*]
+				|[[multiTV?
+				|	&tvName=`photogallery`
+				|	&docid=`[*id*]`
+				|	&display=`all`
+				|	&emptyOutput=`1`
+				|]]
+	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}

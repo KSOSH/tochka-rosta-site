@@ -212,20 +212,33 @@
 	/**
 	** Eye Panel
 	**/
-	$.bvi({
-		'bvi_target' : '.bvi-open', // Класс ссылки включения плагина
-		"bvi_theme" : "white", // Цвет сайта
-		"bvi_font" : "arial", // Шрифт
-		"bvi_font_size" : 18, // Размер шрифта
-		"bvi_letter_spacing" : "normal", // Межбуквенный интервал
-		"bvi_line_height" : "normal", // Междустрочный интервал
-		"bvi_images" : true, // Изображения
-		"bvi_reload" : false, // Перезагрузка страницы при выключении плагина
-		"bvi_fixed" : false, // Фиксирование панели для слабовидящих вверху страницы
-		"bvi_tts" : false, // Синтез речи
-		"bvi_flash_iframe" : true, // Встроенные элементы (видео, карты и тд.)
-		"bvi_hide" : false // Скрывает панель для слабовидящих и показывает иконку панели.
-	});
+	const bvi = {
+		bvi_target : ".bvi-open", // Класс ссылки включения плагина
+		bvi_theme : "white", // Цвет сайта
+		bvi_font : "arial", // Шрифт
+		bvi_font_size : 18, // Размер шрифта
+		bvi_letter_spacing : "normal", // Межбуквенный интервал
+		bvi_line_height : "normal", // Междустрочный интервал
+		bvi_images : true, // Изображения
+		bvi_reload : false, // Перезагрузка страницы при выключении плагина
+		bvi_fixed : false, // Фиксирование панели для слабовидящих вверху страницы
+		bvi_tts : false, // Синтез речи
+		bvi_flash_iframe : true, // Встроенные элементы (видео, карты и тд.)
+		bvi_hide : false // Скрывает панель для слабовидящих и показывает иконку панели.
+	};
+	if(Cookies.get("bvi-panel-active")){
+		$(".bvi-open").data('bvi-init', 1);
+		$.bvi(bvi);
+	} else {
+		$(document).on("click", ".bvi-open", function(e){
+			e.preventDefault();
+			if(!$(this).data('bvi-init')){
+				$.bvi(bvi);
+				$(this).data('bvi-init', 1);
+				$(this).click();
+			}
+		});
+	}
 	/**
 	 * End Eye Panel
 	**/

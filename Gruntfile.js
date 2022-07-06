@@ -150,13 +150,14 @@ module.exports = function(grunt) {
 					"bower_components/fancybox/src/js/wheel.js",
 					'bower_components/slick-carousel/slick/slick.js',
 					'bower_components/js-cookie/src/js.cookie.js',
-					'bower_components/jquery.cookie/jquery.cookie.js'
+					'bower_components/jquery.cookie/jquery.cookie.js',
+					'src/js/bvi.js'
 				],
 				dest: 'test/js/appjs.js'
 			},
 			main: {
 				src: [
-					'src/js/bvi.js',
+					//'src/js/bvi.js',
 					'src/js/main.js'
 				],
 				dest: 'test/js/main.js'
