@@ -38,9 +38,15 @@ header {
 			&-logotip {
 				order: 0;
 				.text-left();
+				a {
+					display: block;
+					width: 100%;
+					aspect-ratio: 250 / 86;
+				}
 			}
 			&-project{
 				order: 2;
+				aspect-ratio: 250 / 207;
 				.text-right();
 			}
 			@media (max-width: 680px) {
@@ -50,6 +56,9 @@ header {
 					img {
 						max-width: 100%;
 					}
+					a {
+						aspect-ratio: unset;
+					}
 				}
 				&-logotip {
 					order: 1;
@@ -57,6 +66,7 @@ header {
 				&-project {
 					order: 2;
 					max-width: 90px;
+					aspect-ratio: unset;
 				}
 				&-text {
 					order: 0;
@@ -68,6 +78,9 @@ header {
 				&-project {
 					min-width: 100%;
 					.text-center();
+					a {
+						aspect-ratio: unset;
+					}
 				}
 				&-logotip {
 					img {
