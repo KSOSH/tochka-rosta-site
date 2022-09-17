@@ -1,3 +1,30 @@
 dl {
-	
+	&.dl-horizontal {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		> dt {
+			width: 200px;
+			.text-right();
+		}
+		> dd {
+			margin-left: unset;
+			max-width: ~'calc(100% - 201px)';
+			width: ~'calc(100% - 201px)';
+			padding-left: 15px;
+		}
+		@media(max-width: 600px){
+			flex-direction: column;
+			> dt {
+				width: revert;
+				text-align: revert;
+			}
+			> dd {
+				margin-left: revert;
+				max-width: revert;
+				width: revert;
+				padding-left: revert;
+			}
+		}
+	}
 }
