@@ -3,6 +3,12 @@ return array (
 	'caption' => 'Карта Контакта',
 	'introtext' => '<b style="color: red">Веб-мастер</b>',
 	'settings' => array (
+		'data_apikey' => array (
+			'caption' => 'API Key Yandex Map',
+			'type' => 'text',
+			'note' => '',
+			'default_text' => '',
+		),
 		'data_point' => array (
 			'caption' => 'Координаты точки на карте',
 			'type' => 'text',
@@ -11,7 +17,7 @@ return array (
 		),
 		'data_addr' => array (
 			'caption' => 'Адрес',
-			'type' => 'text',
+			'type' => 'richtext',
 			'note' => '',
 			'default_text' => '',
 		),
@@ -23,7 +29,7 @@ return array (
 		),
 		'data_phone' => array (
 			'caption' => 'Телефоны',
-			'type' => 'text',
+			'type' => 'richtext',
 			'note' => '',
 			'default_text' => '',
 		),

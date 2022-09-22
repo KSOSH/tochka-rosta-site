@@ -168,6 +168,9 @@ module.exports = function(grunt) {
 				sourceMap: false,
 				compress: {
 					drop_console: true
+				},
+				output: {
+					ascii_only: true
 				}
 			},
 			app: {

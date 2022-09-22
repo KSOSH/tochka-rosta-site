@@ -242,4 +242,45 @@
 	/**
 	 * End Eye Panel
 	**/
+	/**
+	 * Map
+	**/
+	const MapID = $("#map"),
+		init = function() {
+			let data_point = MapID.data('point').split(',').map(Number),
+				data_addr = MapID.data('addr'),
+				data_email = MapID.data('email'),
+				data_phone = MapID.data('phone');
+			const placemark = new ymaps.Placemark(data_point,{
+					balloonContentHeader: '«Точка роста» ГБОУ СОШ пос. Комсомольский',
+					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button">ЗАДАТЬ ВОПРОС</button></p>',
+					balloonContentBody: `<p class="text-left">${data_addr}</p>` +
+										`<p class="text-right">${data_phone}</p>` + 
+										`<p class="text-center"><a href="mailto:${data_email}" target="_blank">${data_email}</a></p>`
+				},
+				{
+					iconLayout: "default#image",
+					iconImageHref: "/assets/templates/projectsoft/images/tr.png?_=v0.0",
+					iconImageSize: [36, 36],
+					iconImageOffset: [-18, -18]
+				});
+			const myMap = new ymaps.Map("map", {
+				center: data_point,
+				zoom: 17,
+				controls: ["typeSelector", "zoomControl", "fullscreenControl"]
+			});
+			myMap.behaviors.disable("scrollZoom"),
+			myMap.geoObjects.add(placemark),
+			placemark.balloon.open();
+		};
+	if(MapID.length) {
+		const scriptMap = document.createElement("script"),
+			api_key = MapID.data('key');
+		scriptMap.type = "text/javascript";
+		scriptMap.src = `https://api-maps.yandex.ru/2.1.79/?apikey=${api_key}&lang=ru_RU`;
+		scriptMap.onload = function() {
+			ymaps.ready(init)
+		};
+		document.body.append(scriptMap);
+	}
 }(jQuery));
