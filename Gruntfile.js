@@ -23,10 +23,10 @@ module.exports = function(grunt) {
 		fontvers: "1.0.0",
 		assets: "assets/templates/projectsoft",
 		default: [
-			"clean",
+			//"clean",
 			"concat",
 			"uglify",
-			"webfont",
+			//"webfont",
 			"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		less: [
-			"clean",
+			//"clean",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -50,14 +50,14 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		js: [
-			"clean",
+			//"clean",
 			"concat",
 			"uglify",
 			"copy",
 			"pug"
 		],
 		pug: [
-			"clean",
+			//"clean",
 			"pug"
 		],
 		images: [
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		fonts: [
-			"clean",
+			//"clean",
 			"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
@@ -84,8 +84,8 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		glyph: [
-			"clean",
-			"webfont",
+			//"clean",
+			//"webfont",
 			"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		speed: [
-			"clean",
+			//"clean",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		webfont: {
+		/*webfont: {
 			icons: {
 				src: 'src/glyph/*.svg',
 				dest: 'src/fonts/',
@@ -215,7 +215,7 @@ module.exports = function(grunt) {
 					template: 'src/less/fonts/font-build.template'
 				}
 			},
-		},
+		},*/
 		less: {
 			css: {
 				options : {
@@ -482,12 +482,12 @@ module.exports = function(grunt) {
 				],
 				tasks: gc.fonts
 			},
-			glyph : {
-				files: [
-					'src/glyph/**/*.*',
-				],
-				tasks: gc.glyph
-			}
+			//glyph : {
+			//	files: [
+			//		'src/glyph/**/*.*',
+			//	],
+			//	tasks: gc.glyph
+			//}
 		}
 	});
 	grunt.registerTask('default',	gc.default);
@@ -495,7 +495,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('css',		gc.less);
 	grunt.registerTask('images',	gc.images);
 	grunt.registerTask('js',		gc.js);
-	grunt.registerTask('glyph',		gc.glyph);
+	//grunt.registerTask('glyph',		gc.glyph);
 	grunt.registerTask('fonts',		gc.fonts);
 	grunt.registerTask('html',		gc.pug);
 	grunt.registerTask('speed',		gc.speed);

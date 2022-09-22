@@ -1,0 +1,17 @@
+main.main
+	header.container.main-wrapper
+		.row
+			.container-full.hyphenation
+				h1
+					|[*pagetitle*]
+	article.container.main-wrapper
+		.row
+			.container-full.hyphenation.text-justify
+				|[*content*]
+	article.container.main-wrapper
+		.row
+			.container-full
+				.embed
+					.embed-responsive.embed-responsive-16by9
+						#map(data-point="[(data_point)]" data-addr="[(data_addr)]" data-emal="[(data_emal)]" data-phone="[(data_phone)]")
+	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}

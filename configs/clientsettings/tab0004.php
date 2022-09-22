@@ -8,6 +8,12 @@ return array (
 			'type' => 'text',
 			'note' => '',
 			'default_text' => '',
+		),
+		'yandex_metrics' => array (
+			'caption' => 'Номер счётчика',
+			'type' => 'text',
+			'note' => '',
+			'default_text' => '',
 		)
 	),
 );

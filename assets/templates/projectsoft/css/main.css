@@ -275,7 +275,7 @@
 }
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -283,7 +283,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -291,7 +291,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBold.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBold.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBold.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBold.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBold.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBold.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -299,14 +299,14 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -314,7 +314,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -322,7 +322,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -330,7 +330,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?6a2eafc220dc29ee0fbd22eee80b27f5') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?6a2eafc220dc29ee0fbd22eee80b27f5') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?a56866a955e2e74c2f1bc7eebabb9772') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?a56866a955e2e74c2f1bc7eebabb9772') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?a56866a955e2e74c2f1bc7eebabb9772') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -6162,6 +6162,81 @@ a.bvi-panel-close {
 
 html body .bvi-panel {
   margin-bottom: 0 !important;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.embed-responsive-16by9,
+.embed-responsive-4by3 {
+  position: relative;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+.ballon {
+  background-color: #fff;
+  padding: 17px;
+  position: relative;
+  border: 1px solid #d8d8da;
+  text-align: left !important;
+  margin-left: 60px;
+  margin-top: -48px;
+  width: 330px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: inset 0px -3px 0px 0px #000;
+}
+
+.ballon::before,
+.ballon::after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ballon::before {
+  border-color: transparent;
+  border-right-color: #d8d8da;
+  border-width: 18px;
+  margin-top: -18px;
+}
+
+.ballon::after {
+  border-color: transparent;
+  border-right-color: #fff;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.ballon__close {
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  cursor: pointer;
+}
+
+ymaps[class*="copyrights-promo"] {
+  display: none !important;
 }
 .home {
   opacity: 0;
