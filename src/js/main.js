@@ -250,9 +250,10 @@
 			let data_point = MapID.data('point').split(',').map(Number),
 				data_addr = MapID.data('addr'),
 				data_email = MapID.data('email'),
-				data_phone = MapID.data('phone');
+				data_phone = MapID.data('phone'),
+				data_name = MapID.data('name');
 			const placemark = new ymaps.Placemark(data_point,{
-					balloonContentHeader: '«Точка роста» ГБОУ СОШ пос. Комсомольский',
+					balloonContentHeader: `${data_name}`,
 					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button">ЗАДАТЬ ВОПРОС</button></p>',
 					balloonContentBody: `<p class="text-left">${data_addr}</p>` +
 										`<p class="text-right">${data_phone}</p>` + 
@@ -261,8 +262,8 @@
 				{
 					iconLayout: "default#image",
 					iconImageHref: "/assets/templates/projectsoft/images/tr.png?_=v0.0",
-					iconImageSize: [36, 36],
-					iconImageOffset: [-18, -18]
+					iconImageSize: [64, 64],
+					iconImageOffset: [-32, -32]
 				});
 			const myMap = new ymaps.Map("map", {
 				center: data_point,
