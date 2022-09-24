@@ -34,10 +34,16 @@ $shortMonth = array('1' => 'янв',
 					'11' => 'ноя',
 					'12' => 'дек');
 if (isset($date2) && $date2>0 ) {
-    $output = strftime($format,$date2);
+	if(!is_numeric($date2)){
+		$date2 = strtotime($date2);
+	}
+    $output = strftime($format, $date2);
 }
 else{
-    $output = strftime($format,$date);
+	if(!is_numeric($date)){
+		$date = strtotime($date);
+	}
+    $output = strftime($format, $date);
 }
 
 $date=explode(".", $output);
@@ -54,6 +60,6 @@ if( isset( $outFormat ) ) {
 	$return = str_replace($searchArray, $replaceArray, $outFormat);
 }
 else
-	$return = $date[0].'&nbsp;'.$m.'&nbsp;'.$date[2];
+	$return = $date[0].' '.$m.' '.$date[2];
 return $return;
 ?>

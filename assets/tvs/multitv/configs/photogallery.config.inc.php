@@ -23,7 +23,7 @@ $settings['templates'] = array(
 	'rowTpl' => '
 	<div class="photogallery-item">
 		<div class="column photogallery-item-image">
-			<a href="[(site_url)][+image+]" data-fancybox-group="photogallery" data-fancybox="ptogallery" data-caption="[+title:ifempty=`[*pagetitle*]`+]" data-loop="true">
+			<a href="[(site_url)][+image+]" data-fancybox-group="photogallery" data-fancybox="ptogallery" data-caption="[+title:ifempty=`[*pagetitle*]`+]" data-loop="true" title="[+title:ifempty=`[*pagetitle*]`+]">
 				<img src="[[thumb? &input=`[+image+]` &options=`w=375,h=240,zc=C`]]" alt="[+title:ifempty=`[*pagetitle*]`+]">
 			</a>
 		</div>

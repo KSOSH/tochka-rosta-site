@@ -49,6 +49,7 @@ comps/**/*
 /assets/modules/*.php
 /assets/modules/docmanager/**/*
 /assets/modules/store/**/*
+/assets/modules/editdocs/**/*
 /assets/modules/clientsettings/core/**/*
 /assets/modules/clientsettings/**/*.sample
 
