@@ -1,10 +1,9 @@
-
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>[*longtitle*]  | Новости</title>
+		<title>[*longtitle*] | Новости</title>
 		<link>[(site_url)]</link>
-		<description/>
+		<description></description>
 		<language>ru</language>
 		<copyright>[*longtitle*] © 2009 - [[$_SERVER['REQUEST_TIME']:dateFormat('Y')]]</copyright>
 		<ttl>120</ttl>
@@ -13,19 +12,19 @@
 			<title>[*longtitle*]</title>
 			<link>[(site_url)][*imageSoc*]</link>
 		</image>
-[[DocLister?
-	&parents=`6`
-	&display=`20`
-	&tvPrefix=``
-	&tvList=`imageSoc,news_date,news_person,titl`
-	&orderBy=``
-	&sortBy=`news_date`
-	&sortDir=`DESC`
-	&tvSortType=`TVDATETIME`
-	&dateSource=`news_date`
-	&dateFormat=`%Y-%m-%dT%T+04:00`
-	&urlScheme=`full`
-	&tpl=`rss_tpl`
-]]
+		[[DocLister?
+			&parents=`6`
+			&display=`20`
+			&tvPrefix=``
+			&tvList=`imageSoc,news_date,news_person,titl`
+			&orderBy=``
+			&sortBy=`news_date`
+			&sortDir=`DESC`
+			&tvSortType=`TVDATETIME`
+			&dateSource=`news_date`
+			&dateFormat=`%Y-%m-%dT%T+04:00`
+			&urlScheme=`full`
+			&tpl=`rss_tpl`
+		]]
 	</channel>
 </rss>
