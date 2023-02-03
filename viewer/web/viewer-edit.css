@@ -3065,3 +3065,7 @@ dialog :link {
     display: none;
   }
 }
+
+.viewer_error #toolbarViewer > * {
+  display: none;
+}

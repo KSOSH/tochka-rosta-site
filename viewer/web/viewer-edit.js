@@ -1936,8 +1936,8 @@ const PDFViewerApplication = {
 					message: reason?.message
 				});
 				if(reason?.status != 200){
-					console.log('Add error', 1936);
 					document.getElementById('viewerContainer')?.classList.add('viewer_error');
+					document.getElementById('toolbarContainer')?.classList.add('viewer_error');
 				}
 				throw reason;
 			});
