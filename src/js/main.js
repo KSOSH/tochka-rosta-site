@@ -144,21 +144,21 @@
 	**/
 	.on("click", "a[href$='.pdf']", function(e){
 		// PDF документы на сервере
-		var base = window.location.origin,
+		var base = window.location.origin + '/',
 			reg = new RegExp("^" + base),
 			href = this.href,
-			go = false;// + "?v=" + new Date().getTime();
-		if(!$(this).data('google')){
-			var go = "https://docs.google.com/viewer?embedded=true&url=" + encodeURI(href);
+			test = this.href,
+			go = false;
+		if(!$(this).data('google') && reg.test(href)){
+			href = href.replace(base, '');
+			var go = window.location.origin + '/viewer/web/?file=' + href;
 			$(this).data('google', go);
 		}
-		if(reg.test(href)){
+		if(reg.test(test)){
 			e.preventDefault();
-			if(!IS_PDF){
-				href = $(this).data('google');
-			}
+			test = $(this).data('google');
 			$.fancybox.open({
-				src: href
+				src: test
 			});
 			return !1;
 		}
