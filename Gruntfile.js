@@ -393,6 +393,14 @@ module.exports = function(grunt) {
 					'**'
 				],
 				dest: __dirname + "/site/",
+			},
+			form: {
+				expand: true,
+				cwd: 'src/json',
+				src: [
+					'**'
+				],
+				dest: __dirname + "/site/comon/json/",
 			}
 		},
 		pug: {

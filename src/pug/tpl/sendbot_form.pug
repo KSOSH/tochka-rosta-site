@@ -1,0 +1,45 @@
+- var sendbotcheck = '[++]';
+.hidden
+	#sendbot.form.modal-form.sendbot
+		.row
+			h2.container-full.text-center.form-title
+				|Задать вопрос
+			.container-full
+				.row.form_wrapper.clearfix
+					|[+form.messages+]
+					form(method="post")
+						input(type="hidden" name="formid" value="sendbot")
+						input(type="hidden" value="[+url.value+]" name="url")
+						.form-groups
+							.form-group-item.form-group.clearfix
+								input.form-group-item-control.form-control(type="text" name="last_name" value="[+last_name.value+]" placeholder="" autocomplete="off")
+								label
+									|Фамилия
+							.form-group-item.form-group.clearfix
+								input.form-group-item-control.form-control(type="text" name="first_name" value="[+first_name.value+]" placeholder="Фамилия" autocomplete="off")
+								label
+									|Имя
+							.form-group-item.form-group.clearfix
+								input.form-group-item-control.form-control(type="text" name="email" value="[+email.value+]" placeholder="Имя" required="required" autocomplete="off")
+								label
+									|Email
+							.form-group-item.form-group.clearfix
+								input.form-group-item-control.form-control(type="text" name="phone" value="[+phone.value+]" placeholder="Email" required="required" autocomplete="off")
+								label
+									|Телефон
+							.form-group-item.form-group.clearfix
+								textarea.form-group-item-control.form-control(type="text" name="comment" rows="4" placeholder="Ваше сообщение" required="required" autocomplete="off")
+									|[+comment.value+]
+								label
+									|Ваше сообщение
+							.form-group-item.form-group.clearfix
+								label
+									input.form-group-item-control(type="checkbox" name="policy" required="required" checked)
+									|&nbsp;
+									|согласен с условиями
+									| !{' '}
+									a(href="/policy.html" target="_blank")
+										|политики конфиденциальности
+							.form-group-item.form-group.clearfix.text-center
+								button.btn(type="submit")
+									|Отправить

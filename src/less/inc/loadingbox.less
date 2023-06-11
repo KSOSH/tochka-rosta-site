@@ -1,0 +1,29 @@
+.loadingbox {
+	visibility: hidden;
+	position: fixed;
+	z-index: -300;
+	width: 100vw;
+	height: 100vh;
+	transition: all .3s ease;
+	background-color: rgba(255, 255, 255, 0);
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-image: data-uri('../images/Spinner.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 200px 200px;
+	}
+}
+.formSend {
+	.loadingbox {
+		visibility: visible;
+		background-color: rgba(255, 255, 255, 0.3);
+		z-index: 999999999999999;
+	}
+}

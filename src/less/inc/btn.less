@@ -1,7 +1,14 @@
 .btn {
+	&:focus {
+		color: @white;
+		background-color: @red;
+	}
 	&:hover {
-		color: @red;
-		background-color: @white;
+		&,
+		&:focus {
+			color: @red;
+			background-color: @white;
+		}
 	}
 	&,
 	&:hover,

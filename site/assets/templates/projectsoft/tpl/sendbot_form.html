@@ -1,0 +1,48 @@
+
+<div class="hidden">
+	<div class="form modal-form sendbot" id="sendbot">
+		<div class="row">
+			<h2 class="container-full text-center form-title">Задать вопрос</h2>
+			<div class="container-full">
+				<div class="row form_wrapper clearfix">[+form.messages+]
+					<form method="post">
+						<input type="hidden" name="formid" value="sendbot"/>
+						<input type="hidden" value="[+url.value+]" name="url"/>
+						<div class="form-groups">
+							<div class="form-group-item form-group clearfix">
+								<input class="form-group-item-control form-control" type="text" name="last_name" value="[+last_name.value+]" placeholder="" autocomplete="off"/>
+								<label>Фамилия</label>
+							</div>
+							<div class="form-group-item form-group clearfix">
+								<input class="form-group-item-control form-control" type="text" name="first_name" value="[+first_name.value+]" placeholder="Фамилия" autocomplete="off"/>
+								<label>Имя</label>
+							</div>
+							<div class="form-group-item form-group clearfix">
+								<input class="form-group-item-control form-control" type="text" name="email" value="[+email.value+]" placeholder="Имя" required="required" autocomplete="off"/>
+								<label>Email</label>
+							</div>
+							<div class="form-group-item form-group clearfix">
+								<input class="form-group-item-control form-control" type="text" name="phone" value="[+phone.value+]" placeholder="Email" required="required" autocomplete="off"/>
+								<label>Телефон</label>
+							</div>
+							<div class="form-group-item form-group clearfix">
+								<textarea class="form-group-item-control form-control" type="text" name="comment" rows="4" placeholder="Ваше сообщение" required="required" autocomplete="off">[+comment.value+]</textarea>
+								<label>Ваше сообщение</label>
+							</div>
+							<div class="form-group-item form-group clearfix">
+								<label>
+									<input class="form-group-item-control" type="checkbox" name="policy" required="required" checked="checked"/>&nbsp;
+									согласен с условиями
+ <a href="/policy.html" target="_blank">политики конфиденциальности</a>
+								</label>
+							</div>
+							<div class="form-group-item form-group clearfix text-center">
+								<button class="btn" type="submit">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

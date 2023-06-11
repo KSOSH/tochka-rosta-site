@@ -275,7 +275,7 @@
 }
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlack.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlack.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -283,7 +283,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBlackItalic.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -291,7 +291,7 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBold.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBold.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBold.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBold.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBold.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBold.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -299,14 +299,14 @@
 
 @font-face {
   font-family: 'Muller';
-  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('Muller'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/MullerBoldItalic.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arial.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/arial.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/arial.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -314,7 +314,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/ariali.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/ariali.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/ariali.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -322,7 +322,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbd.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbd.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/arialbd.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -330,7 +330,7 @@
 
 @font-face {
   font-family: 'ArialSite';
-  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?af409039314273f88359279accd310e6') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?af409039314273f88359279accd310e6') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?af409039314273f88359279accd310e6') format('truetype');
+  src: local('ArialSite'), url('/assets/templates/projectsoft/fonts/arialbi.woff2?ee53a9b35e1f79b97fa78f225d68da11') format('woff2'), url('/assets/templates/projectsoft/fonts/arialbi.woff?ee53a9b35e1f79b97fa78f225d68da11') format('woff'), url('/assets/templates/projectsoft/fonts/arialbi.ttf?ee53a9b35e1f79b97fa78f225d68da11') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -6243,6 +6243,41 @@ ymaps[class*="copyrights-promo"] {
   transition: opacity 0.25s ease 0s, visibility 0s ease 0s;
   visibility: visible;
 }
+.hidden,
+[type="hidden"] {
+  display: none !important;
+}
+
+.loadingbox {
+  visibility: hidden;
+  position: fixed;
+  z-index: -300;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.loadingbox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22margin%3A%20auto%3B%20background%3A%20none%3B%20display%3A%20block%3B%20shape-rendering%3A%20auto%3B%22%20width%3D%22195px%22%20height%3D%22195px%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%0A%3Cg%20transform%3D%22rotate(0%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.9333333333333333s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(24%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.8666666666666667s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(48%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.8s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(72%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.7333333333333333s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(96%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.6666666666666666s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(120%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.6s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(144%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.5333333333333333s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(168%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.4666666666666667s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(192%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.4s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(216%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.3333333333333333s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(240%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.26666666666666666s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(264%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.2s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(288%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.13333333333333333s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(312%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%22-0.06666666666666667s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%3Cg%20transform%3D%22rotate(336%2050%2050)%22%3E%0A%20%20%3Crect%20x%3D%2244.5%22%20y%3D%221.5%22%20rx%3D%225.5%22%20ry%3D%2228.5%22%20width%3D%2211%22%20height%3D%2257%22%20fill%3D%22%2333292b%22%3E%0A%20%20%20%20%3Canimate%20attributeName%3D%22opacity%22%20values%3D%221%3B0%22%20keyTimes%3D%220%3B1%22%20dur%3D%221s%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2Fanimate%3E%0A%20%20%3C%2Frect%3E%0A%3C%2Fg%3E%0A%3C!--%20%5Bldio%5D%20generated%20by%20https%3A%2F%2Floading.io%2F%20--%3E%3C%2Fsvg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+
+.formSend .loadingbox {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 999999999999999;
+}
+
 .home {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -6292,7 +6327,13 @@ ymaps[class*="copyrights-promo"] {
   border: 1px solid #ed1c24;
 }
 
-.btn:hover {
+.btn:focus {
+  color: #ffffff;
+  background-color: #ed1c24;
+}
+
+.btn:hover,
+.btn:hover:focus {
   color: #ed1c24;
   background-color: #ffffff;
 }
@@ -7314,6 +7355,116 @@ header.head .logotips-project {
 
 .footer .rss-link a {
   text-decoration: none !important;
+}
+
+.form-title {
+  margin-top: 0;
+}
+
+.form-group-item {
+  position: relative;
+}
+
+.form-group-item:first-child {
+  display: none !important;
+}
+
+.form-group-item:last-child {
+  margin-bottom: 0;
+}
+
+.form-group-item label {
+  font-weight: normal;
+}
+
+.form-group-item-control {
+  display: block;
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  line-height: 1.5em;
+  margin-top: 0.3em;
+  appearance: none;
+  border: unset;
+  box-shadow: 0 0 1px 1px #333;
+  border-radius: 0.2em;
+  outline: unset!important;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+.form-group-item-control ~ label {
+  background-color: transparent;
+  position: absolute;
+  line-height: 1;
+  top: 1.2em;
+  left: 15px;
+  pointer-events: none;
+  padding: 0 7px;
+  color: #888;
+  transition: all 0.3s ease;
+  font-size: 0.8em;
+  -webkit-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+  white-space: nowrap!important;
+  max-width: calc(100% - 30px);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.form-group-item-control:-ms-input-placeholder {
+  color: transparent!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+}
+
+.form-group-item-control::placeholder {
+  color: transparent!important;
+  -webkit-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+}
+
+.form-group-item-control:not(:placeholder-shown),
+.form-group-item-control:focus {
+  box-shadow: 0 0 3px 0px #333;
+}
+
+.form-group-item-control:not(:placeholder-shown) ~ label,
+.form-group-item-control:focus ~ label {
+  top: -0.4em;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-group-item-control[type="checkbox"] {
+  display: inline-block;
+  padding: 0.6em;
+  margin-top: 0!important;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 0;
+  box-shadow: 0 0 1px 1px #333;
+}
+
+.form-group-item-control[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2025.3.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20518.7%20518.7%22%20style%3D%22enable-background%3Anew%200%200%20518.7%20518.7%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0D%0A%09.st0%7Bfill%3A%234D9525%3B%7D%0D%0A%3C%2Fstyle%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20class%3D%22st0%22%20d%3D%22M450.1%2C181.2L236.3%2C394.9c-15.8%2C15.8-41.5%2C15.8-57.4%2C0L68.6%2C284.6c-15.8-15.8-15.8-41.5%2C0-57.4%0D%0A%09%09c15.8-15.8%2C41.5-15.8%2C57.4%2C0l81.7%2C81.7l185.1-185.1c15.8-15.8%2C41.5-15.8%2C57.4%2C0C466%2C139.6%2C466%2C165.3%2C450.1%2C181.2z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A");
+  background-position: center center;
+  background-size: contain;
+  box-shadow: 0 0 1px 1px #333;
+}
+
+.form-group-item-control[type="checkbox"]:focus {
+  box-shadow: 0 0 3px 0px #333;
+}
+
+.form-group-item textarea.form-control {
+  resize: vertical;
+  min-height: 5em !important;
 }
 
 @media screen and (max-width: 767px) {

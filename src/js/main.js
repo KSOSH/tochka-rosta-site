@@ -250,12 +250,60 @@
 	/**
 	 * Форма обратной связи
 	 **/
-	.on("click", '*[data-trigger="callme"]', function(e){
+	.on("click", '*[data-trigger="sendbot"]', function(e){
 		e.preventDefault();
-		let $this = $(e.target);
-		console.log($this);
-		console.log(e);
+		let $this = $(e.target),
+			$data = $("#" + $this.data('trigger'));
+		if($data.length){
+			/**
+			$.fancybox.open($data, {
+				modal: true,
+				infobar: false,
+				clickOutside: false,
+				buttons: [
+					"close"
+				],
+			});
+			**/
+		}
 		return !1;
+	})
+	.on('submit', 'form', function(e){
+		e.preventDefault();
+		const $form = $(e.target).closest('.modal-form'),
+			data = new FormData(e.target),
+			url = e.target.action,
+			method = e.target.method;
+		return !1;
+		/**
+		$("body").addClass('formSend');
+		$.ajax({
+			url: url,
+			type: method,
+			data: data,
+			async: true,
+			cache: false,
+			contentType: false,
+			processData: false,
+			dataType: 'json'
+		}).done(function(a, b, c) {
+			if(a.forms) {
+				if(a.forms.form) {
+					let form = $(a.forms.form),
+						modal = $('.modal-form', form);
+					$form.html(modal.html());
+				}
+			};
+		})
+		.fail(function(a, b, c, d) {
+			console.log('fail');
+			console.log(arguments);
+		})
+		.always(function() {
+			$("body").removeClass('formSend');
+		});
+		return !1;
+		**/
 	});
 
 	/**
@@ -285,7 +333,7 @@
 	/**
 	 * End Navigation
 	**/
-	
+
 	/**
 	** Eye Panel
 	**/
@@ -331,7 +379,7 @@
 				data_name = MapID.data('name');
 			const placemark = new ymaps.Placemark(data_point,{
 					balloonContentHeader: `Центр образования цифрового и гуманитарного профилей ${data_name}`,
-					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button" data-trigger="callme">ЗАДАТЬ ВОПРОС</button></p>',
+					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button" data-trigger="sendbot">ЗАДАТЬ ВОПРОС</button></p>',
 					balloonContentBody: `<p class="text-left">${data_addr}</p>` +
 										`<p class="text-right">${data_phone}</p>` + 
 										`<p class="text-center"><a href="mailto:${data_email}" target="_blank">${data_email}</a></p>`
