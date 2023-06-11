@@ -5,17 +5,17 @@ test.*
 /.htaccess
 /.*
 /*.ini
+/node_modules
+/bower_components
 
-/site/android-chrome*
-/site/apple-touch*
-/site/favicon*
-/site/browserconf*
+# /site/android-chrome*
+# /site/apple-touch*
+# /site/favicon*
+# /site/browserconf*
 # /site*
-/site/safari*
-/site/mstile*
+# /site/safari*
+# /site/mstile*
 
-/node_modules/**/*
-/bower_components/**/*
 /test/**/*
 /tests/**/*
 /site/food/*
