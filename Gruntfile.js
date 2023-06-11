@@ -293,7 +293,7 @@ module.exports = function(grunt) {
 						src: [
 							'test/css/media/main.css'
 						],
-						dest: 'dist/assets/templates/projectsoft/css/',
+						dest: 'site/assets/templates/projectsoft/css/',
 						filter: 'isFile'
 					}
 				]
@@ -306,7 +306,7 @@ module.exports = function(grunt) {
 			},
 			minify: {
 				files: {
-					'dist/assets/templates/projectsoft/css/main.min.css' : ['test/css/replace/main.css']
+					'site/assets/templates/projectsoft/css/main.min.css' : ['test/css/replace/main.css']
 				}
 			}
 		},
