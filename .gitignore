@@ -8,6 +8,7 @@ test.*
 /node_modules
 /bower_components
 
+
 # /site/android-chrome*
 # /site/apple-touch*
 # /site/favicon*
@@ -18,6 +19,7 @@ test.*
 
 /test/**/*
 /tests/**/*
+/site/composer.lock
 /site/food/*
 /site/assets/.thumbs/**/*
 /assets/thumbs/**/*
