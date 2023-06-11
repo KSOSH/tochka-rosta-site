@@ -86,7 +86,7 @@ comps/**/*
 /site/assets/snippets/FormLister/config
 /site/assets/snippets/FormLister/docs
 /site/assets/snippets/FormLister/lib
-/site/assets/snippets/FormLister/core/lang
+/site/assets/snippets/FormLister/core/lang/**/*.php
 /site/assets/snippets/FormLister/core/*.php
 /site/assets/snippets/FormLister/core/controller/*.php
 
@@ -138,3 +138,4 @@ comps/**/*
 !site/assets/tvs/multitv/configs/side_bar.config.inc.php
 !site/assets/snippets/phpthumb/snippet.thumb.php
 !site/assets/snippets/FormLister/core/controller/SendBot.php
+!site/assets/snippets/FormLister/core/lang/**/sendbot.inc.php
