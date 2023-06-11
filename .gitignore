@@ -81,7 +81,15 @@ comps/**/*
 /site/assets/snippets/*.html
 /site/assets/snippets/*.php
 /site/assets/snippets/DocLister/*
-/site/assets/snippets/FormLister/*
+
+/site/assets/snippets/FormLister/*.php
+/site/assets/snippets/FormLister/config
+/site/assets/snippets/FormLister/docs
+/site/assets/snippets/FormLister/lib
+/site/assets/snippets/FormLister/core/lang
+/site/assets/snippets/FormLister/core/*.php
+/site/assets/snippets/FormLister/core/controller/*.php
+
 /site/assets/snippets/GetGlobalCookie/*
 /site/assets/snippets/breadcrumbs/*
 /site/assets/snippets/docinfo/*
@@ -129,3 +137,4 @@ comps/**/*
 !site/assets/tvs/multitv/configs/youtube_list.config.inc.php
 !site/assets/tvs/multitv/configs/side_bar.config.inc.php
 !site/assets/snippets/phpthumb/snippet.thumb.php
+!site/assets/snippets/FormLister/core/controller/SendBot.php
