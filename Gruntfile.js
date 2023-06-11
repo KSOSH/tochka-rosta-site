@@ -22,6 +22,7 @@ module.exports = function(grunt) {
 	var gc = {
 		fontvers: "1.0.0",
 		assets: "assets/templates/projectsoft",
+		dist: "site/assets/templates/projectsoft",
 		default: [
 			//"clean",
 			"concat",
@@ -182,7 +183,7 @@ module.exports = function(grunt) {
 							'test/js/appjs.js',
 							'test/js/main.js'
 						],
-						dest: '<%= globalConfig.assets %>/js',
+						dest: '<%= globalConfig.dist %>/js',
 						filter: 'isFile',
 						rename: function (dst, src) {
 							return dst + '/' + src.replace('.js', '.min.js');
@@ -229,8 +230,8 @@ module.exports = function(grunt) {
 					],
 					modifyVars: {
 						'hashes': '\'' + uniqid() + '\'',
-						'fontpath': '/<%= globalConfig.assets %>/fonts',
-						'imgpath': '/<%= globalConfig.assets %>/images',
+						'fontpath': '/assets/templates/projectsoft/fonts',
+						'imgpath': '/assets/templates/projectsoft/images',
 					}
 				},
 				files : {
@@ -292,7 +293,7 @@ module.exports = function(grunt) {
 						src: [
 							'test/css/media/main.css'
 						],
-						dest: '<%= globalConfig.assets %>/css/',
+						dest: 'dist/assets/templates/projectsoft/css/',
 						filter: 'isFile'
 					}
 				]
@@ -305,7 +306,7 @@ module.exports = function(grunt) {
 			},
 			minify: {
 				files: {
-					'<%= globalConfig.assets %>/css/main.min.css' : ['test/css/replace/main.css']
+					'dist/assets/templates/projectsoft/css/main.min.css' : ['test/css/replace/main.css']
 				}
 			}
 		},
@@ -332,7 +333,7 @@ module.exports = function(grunt) {
 						src: [
 							'src/images/*.{gif,svg}'
 						],
-						dest: '<%= globalConfig.assets %>/images/',
+						dest: '<%= globalConfig.dist %>/images/',
 						filter: 'isFile'
 					}
 				]
@@ -345,7 +346,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'test/images', 
 						src: ['**/*.{png,jpg,jpeg}'],
-						dest: '<%= globalConfig.assets %>/images/'
+						dest: '<%= globalConfig.dist %>/images/'
 					}
 				]
 			}
@@ -353,19 +354,19 @@ module.exports = function(grunt) {
 		ttf2eot: {
 			default: {
 				src: 'src/fonts/*.ttf',
-				dest: '<%= globalConfig.assets %>/fonts/'
+				dest: '<%= globalConfig.dist %>/fonts/'
 			}
 		},
 		ttf2woff: {
 			default: {
 				src: 'src/fonts/*.ttf',
-				dest: '<%= globalConfig.assets %>/fonts/'
+				dest: '<%= globalConfig.dist %>/fonts/'
 			}
 		},
 		ttf2woff2: {
 			default: {
 				src: 'src/fonts/*.ttf',
-				dest: '<%= globalConfig.assets %>/fonts/'
+				dest: '<%= globalConfig.dist %>/fonts/'
 			}
 		},
 		copy: {
@@ -375,7 +376,7 @@ module.exports = function(grunt) {
 				src: [
 					'**'
 				],
-				dest: '<%= globalConfig.assets %>/fonts/',
+				dest: '<%= globalConfig.dist %>/fonts/',
 			},
 			js: {
 				expand: true,
@@ -383,7 +384,7 @@ module.exports = function(grunt) {
 				src: [
 					'**'
 				],
-				dest: '<%= globalConfig.assets %>/js/',
+				dest: '<%= globalConfig.dist %>/js/',
 			},
 			favicons: {
 				expand: true,
@@ -391,7 +392,7 @@ module.exports = function(grunt) {
 				src: [
 					'**'
 				],
-				dest: __dirname,
+				dest: __dirname + "/site/",
 			}
 		},
 		pug: {
@@ -420,7 +421,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: __dirname + '/src/pug/',
 						src: [ '*.pug' ],
-						dest: __dirname + '/' + '<%= globalConfig.assets %>/',
+						dest: __dirname + '/' + '<%= globalConfig.dist %>/',
 						ext: '.html'
 					}
 				]
@@ -443,7 +444,7 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						dest: __dirname + '/<%= globalConfig.assets %>/tpl/',
+						dest: __dirname + '/<%= globalConfig.dist %>/tpl/',
 						cwd:  __dirname + '/src/pug/tpl/',
 						src: '*.pug',
 						ext: '.html'
