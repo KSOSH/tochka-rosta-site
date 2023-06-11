@@ -243,10 +243,20 @@
 		let date = new Date(Date.now() + 86400000 * COOKIE_DATE);
 		Cookies.set('notify_policy', 'true', { expires: date, path: '/' });
 		return !1;
-	});
+	})
 	/**
 	 * End Обработка окна о куках
 	**/
+	/**
+	 * Форма обратной связи
+	 **/
+	.on("click", '*[data-trigger="callme"]', function(e){
+		e.preventDefault();
+		let $this = $(e.target);
+		console.log($this);
+		console.log(e);
+		return !1;
+	});
 
 	/**
 	 ** Sliders
@@ -320,8 +330,8 @@
 				data_phone = MapID.data('phone'),
 				data_name = MapID.data('name');
 			const placemark = new ymaps.Placemark(data_point,{
-					balloonContentHeader: `${data_name}`,
-					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button">ЗАДАТЬ ВОПРОС</button></p>',
+					balloonContentHeader: `Центр образования цифрового и гуманитарного профилей ${data_name}`,
+					balloonContentFooter: '<p class="text-center"><button class="callme-btn btn" type="button" data-trigger="callme">ЗАДАТЬ ВОПРОС</button></p>',
 					balloonContentBody: `<p class="text-left">${data_addr}</p>` +
 										`<p class="text-right">${data_phone}</p>` + 
 										`<p class="text-center"><a href="mailto:${data_email}" target="_blank">${data_email}</a></p>`

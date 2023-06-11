@@ -1,0 +1,75 @@
+<div id="technic_skat" class="modal-form">
+	<div class="row">
+		<h2 class="container-fluid text-center">Заявка на приобретение<br><small>[+themetitle+]</small></h2>
+		<div class="container-fluid">
+			<div class="row form_wrapper clearfix">
+				[+form.messages+]
+				<form method="post">
+					<input type="hidden" name="formid" value="technic">
+					<input type="hidden" value="[+url.value+]" name="url">
+					<div class="form-group clearfix hidden">
+						<label for="last_name" class="container-fluid control-label">
+							<span class="red">*</span> Фамилия:
+						</label>
+						<div class="container-fluid">
+							<input id="last_name" type="text" class="form-control" placeholder="Фамилия" name="last_name" value="[+last_name.value+]">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="first_name" class="container-fluid control-label">
+							<span class="red">*</span> Имя:
+						</label>
+						<div class="container-fluid">
+							<input id="first_name" type="text" class="form-control" placeholder="Имя" name="first_name" value="[+first_name.value+]">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="email" class="container-fluid control-label">
+							<span class="red">*</span> Email:
+						</label>
+						<div class="container-fluid">
+							<input id="email" type="text" class="form-control" placeholder="Email" name="email" value="[+email.value+]">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="phone" class="container-fluid control-label">
+							<span class="red">*</span> Телефон:
+						</label>
+						<div class="container-fluid">
+							<input id="phone" type="text" class="form-control" placeholder="+7(999)999-99-99" name="phone" value="[+phone.value+]">
+						</div>
+					</div>
+					<div class="form-group clearfix hidden">
+						<label for="razdel" class="container-fluid control-label">
+							<span class="red">*</span> Тема сообщения:
+						</label>
+						<div class="container-fluid">
+							<input type="hidden" value="[+themetitle+]" name="razdel">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="comment" class="container-fluid control-label">
+							<span class="red">*</span> Cообщение:
+						</label>
+						<div class="container-fluid">
+							<textarea id="comment" type="text" class="form-control" placeholder="Ваше сообщение" name="comment">[+comment.value+]</textarea>
+						</div>
+					</div>
+					<div class="form-group clearfix policy">
+						<div class="container-fluid">
+							<label for="policy">
+								<input id="policy" type="checkbox" class="form-control" name="policy" [+policy_check.value+] required="required"> согласен с условиями</label> <a href="/policy.html" target="_blank">политики конфиденциальности</a>
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<div class="container-fluid text-center">
+							<button type="submit" class="btn btn-primary">
+								<i class="glyphicon glyphicon-envelope"></i> Отправить
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
