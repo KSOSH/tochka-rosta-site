@@ -1,4 +1,3 @@
-- var sendbotcheck = '[++]';
 .hidden
 	#sendbot.form.modal-form.sendbot
 		.row
@@ -28,8 +27,8 @@
 								label
 									|Телефон
 							.form-group-item.form-group.clearfix
-								textarea.form-group-item-control.form-control(type="text" name="comment" rows="4" placeholder="Ваше сообщение" required="required" autocomplete="off")
-									|[+comment.value+]
+								textarea.form-group-item-control.form-control(type="text" name="message" rows="4" placeholder="Ваше сообщение" required="required" autocomplete="off")
+									|[+message.value+]
 								label
 									|Ваше сообщение
 							.form-group-item.form-group.clearfix
@@ -38,7 +37,7 @@
 									|&nbsp;
 									|согласен с условиями
 									| !{' '}
-									a(href="/policy.html" target="_blank")
+									a(href="[(site_url)][~79~]" target="_blank")
 										|политики конфиденциальности
 							.form-group-item.form-group.clearfix.text-center
 								button.btn(type="submit")

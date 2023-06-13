@@ -4,13 +4,15 @@
 	"api"						: "0",
 	"to"						: "projectsoft@projectsoft.ru",
 	"bcc"						: "projectsoft2009@yandex.ru",
-	"successTpl"				: "@CODE:<div id=\"message_form_success\"><h2 class=\"text-center\">Спасибо!</h2><p class=\"text-center\">Ваш Вопрос отправлен!</p><p class=\"text-center\">После рассмотрения Вашего вопроса мы с Вами свяжемся.</p></div>",
+	"successTpl"				: "@FILE: projectsoft/tpl/sendbot_succes",
 	"messagesTpl"				: "@CODE:[+required+][+errors+]",
 	"messagesErrorOuterTpl"		: "@CODE:<ul class=\"error_list\"><li>[+messages+]</li></ul>",
 	"messagesErrorSplitter"		: "</li><li>",
 	"errorTpl"					: "@CODE:<li>[+message+]</li>",
 	"formTpl"					: "@FILE: projectsoft/tpl/sendbot_form",
-	"reportTpl"					: "@CODE:0003.html",
+	"reportTpl"					: "@FILE: projectsoft/tpl/sendbot_report",
+	"prepareProcess"			: "\\ProjectSoft\\PrepareFormSchool::prepareAfterProcess",
+	"prepare"					: "\\ProjectSoft\\PrepareFormSchool::prepare",
 	"rules"						: {
 		"last_name": {
 			"custom" : {
@@ -40,7 +42,7 @@
 				"message": "Телефон введён не корректно"
 			}
 		},
-		"comment": {
+		"message": {
 			"custom" : {
 				"function": "\\ProjectSoft\\FormValidator::noTags",
 				"params": [2],

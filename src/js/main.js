@@ -255,7 +255,7 @@
 		let $this = $(e.target),
 			$data = $("#" + $this.data('trigger'));
 		if($data.length){
-			/**
+			/**/
 			$.fancybox.open($data, {
 				modal: true,
 				infobar: false,
@@ -264,7 +264,7 @@
 					"close"
 				],
 			});
-			**/
+			/**/
 		}
 		return !1;
 	})
@@ -274,8 +274,8 @@
 			data = new FormData(e.target),
 			url = e.target.action,
 			method = e.target.method;
-		return !1;
-		/**
+		//return !1;
+		/**/
 		$("body").addClass('formSend');
 		$.ajax({
 			url: url,
@@ -292,6 +292,7 @@
 					let form = $(a.forms.form),
 						modal = $('.modal-form', form);
 					$form.html(modal.html());
+					$('input[name="phone"]').inputmask({"mask": "+7(999)999-99-99"});
 				}
 			};
 		})
@@ -303,9 +304,15 @@
 			$("body").removeClass('formSend');
 		});
 		return !1;
-		**/
+		/**/
 	});
-
+	/**
+	 ** Phone mask
+	**/
+	$('input[name="phone"]').inputmask({"mask": "+7(999)999-99-99"});
+	/**
+	 ** End Phone mask
+	 **/
 	/**
 	 ** Sliders
 	**/
