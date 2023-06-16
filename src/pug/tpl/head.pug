@@ -21,7 +21,7 @@ head
 	link(rel="manifest" href="[(site_url)]manifest.json")
 	// Styles
 	link(type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?" + hash)
-	//link(type="text/css" rel="stylesheet" href="[(site_url)]css.css?" + hash)
+	link(type="text/css" rel="stylesheet" href!="[(site_url)]css.css?[!$_SERVER['REQUEST_TIME']!]")
 	meta(name="title" content="[*pagetitle:notags:strip*]")
 	meta(name="description" content="[*desc:notags:strip*]")
 	meta(name="keywords" content="[*keyw:notags:strip*]")
@@ -39,11 +39,3 @@ head
 	meta(name="twitter:site" content="[(twitter_creator)]")
 	meta(name="twitter:creator" content="[(twitter_creator)]")
 	|[[ogImage]]
-	style
-		|/*body {
-		|	background-image: url([(background_image)]);
-		|	background-repeat: [(background_repeat)];
-		|	background-size: [(background_size)];
-		|	background-position: [(background_position)];
-		|	background-attachment: [(background_attachment)];
-		|}*/
