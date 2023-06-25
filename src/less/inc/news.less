@@ -13,6 +13,26 @@
 	&-autor {
 		text-align: right;
 		font-style: italic;
+		&-history {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			> strong {
+				margin-top: 0.6em;
+				max-width: 28em;
+				text-align: right;
+			}
+			@media (max-width: 37em){
+				> strong {
+					display: block;
+					width: 100%;
+					max-width: 100%;
+					text-align: right;
+				}
+			}
+		}
 	}
 }
 .news {

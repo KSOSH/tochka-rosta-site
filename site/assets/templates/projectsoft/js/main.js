@@ -1,4 +1,34 @@
 !(function($){
+	!(function(){
+		let ref = document.referrer,
+			url = new URL(ref),
+			link,
+			a;
+		if(url.origin == document.location.origin){
+			let person = document.querySelector('.article-autor');
+			if(person){
+				a = document.createElement('a');
+				a.innerHTML = 'Вернуться';//'<span>В</span><span>е</span><span>р</span><span>н</span><span>у</span><span>т</span><span>ь</span><span>с</span><span>я</span>';
+				//a.setAttribute('data-before', 'Вернуться');
+				a.classList.add('btn');
+				a.classList.add('btn-any')
+				if(url.searchParams.has('page')){
+					let page = parseInt(url.searchParams.get('page'));;
+					// Вернуться на page
+					link = url.origin + url.pathname + '?page=' + page;;
+				}else{
+					// Вернуться в новости
+					link = url.origin + url.pathname;
+				}
+				a.setAttribute('href', link);
+				let p = document.createElement('p');
+				//p.append(a);
+				person.prepend(a);
+				person.classList.add('article-autor-history')
+				//person.parentNode.insertBefore(p, person.nextSibling);
+			}
+		}
+	}());
 	/**
 	 * Default options Fancybox
 	**/

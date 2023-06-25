@@ -4,10 +4,9 @@
 	"description": "Сайт «Точка Роста» ГБОУ СОШ пос. Комсомольский",
 	"main": "Gruntfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"inst": "npm install --legacy-peer-deps && bower install",
 		"build": "grunt -v",
-		"light_build": "grunt work -v",
+		"test": "grunt work -v",
 		"run": "npm run inst && npm run build"
 	},
 	"repository": {
