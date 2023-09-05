@@ -1,3 +1,4 @@
+// Glyphs Icons
 @icon-begin: "\e900";
 @icon-bell: "\e901";
 @icon-best-banner: "\e902";
@@ -7,71 +8,74 @@
 @icon-callme: "\e906";
 @icon-check: "\e907";
 @icon-checkbox: "\e908";
-@icon-chrome: "\e909";
-@icon-circle-close: "\e90a";
-@icon-close: "\e90b";
-@icon-copy: "\e90c";
-@icon-down: "\e90d";
-@icon-download-pdf: "\e90e";
-@icon-download: "\e90f";
-@icon-email: "\e910";
-@icon-end: "\e911";
-@icon-error: "\e912";
-@icon-event-calendar: "\e913";
-@icon-eye-close: "\e914";
-@icon-eye-new: "\e915";
-@icon-eye: "\e916";
-@icon-facebook: "\e917";
-@icon-fbs: "\e918";
-@icon-firefox: "\e919";
-@icon-github: "\e91a";
-@icon-google: "\e91b";
-@icon-home: "\e91c";
-@icon-icofb: "\e91d";
-@icon-icoinsta: "\e91e";
-@icon-icook: "\e91f";
-@icon-icosk: "\e920";
-@icon-icotg: "\e921";
-@icon-icotw: "\e922";
-@icon-icovb: "\e923";
-@icon-icovk: "\e924";
-@icon-icoyt: "\e925";
-@icon-image: "\e926";
-@icon-modx: "\e927";
-@icon-next: "\e928";
-@icon-ok: "\e929";
-@icon-oks: "\e92a";
-@icon-opera: "\e92b";
-@icon-phone: "\e92c";
-@icon-photo: "\e92d";
-@icon-prev: "\e92e";
-@icon-print-ic: "\e92f";
-@icon-print: "\e930";
-@icon-required: "\e931";
-@icon-reset: "\e932";
-@icon-rss-logo: "\e933";
-@icon-rss: "\e934";
-@icon-search: "\e935";
-@icon-share: "\e936";
-@icon-success: "\e937";
-@icon-twitter: "\e938";
-@icon-tws: "\e939";
-@icon-up: "\e93a";
-@icon-vk: "\e93b";
-@icon-vks: "\e93c";
-@icon-zoom-in: "\e93d";
-@icon-zoom-out: "\e93e";
+@icon-checks: "\e909";
+@icon-chrome: "\e90a";
+@icon-circle-close: "\e90b";
+@icon-close: "\e90c";
+@icon-copy: "\e90d";
+@icon-down: "\e90e";
+@icon-download-pdf: "\e90f";
+@icon-download: "\e910";
+@icon-email: "\e911";
+@icon-end: "\e912";
+@icon-error: "\e913";
+@icon-event-calendar: "\e914";
+@icon-eye-close: "\e915";
+@icon-eye-new: "\e916";
+@icon-eye: "\e917";
+@icon-facebook: "\e918";
+@icon-fbs: "\e919";
+@icon-firefox: "\e91a";
+@icon-github: "\e91b";
+@icon-google: "\e91c";
+@icon-home: "\e91d";
+@icon-icofb: "\e91e";
+@icon-icoinsta: "\e91f";
+@icon-icook: "\e920";
+@icon-icosk: "\e921";
+@icon-icotg: "\e922";
+@icon-icotw: "\e923";
+@icon-icovb: "\e924";
+@icon-icovk: "\e925";
+@icon-icoyt: "\e926";
+@icon-image: "\e927";
+@icon-modx: "\e928";
+@icon-next: "\e929";
+@icon-ok: "\e92a";
+@icon-oks: "\e92b";
+@icon-opera: "\e92c";
+@icon-phone: "\e92d";
+@icon-photo: "\e92e";
+@icon-prev: "\e92f";
+@icon-print-ic: "\e930";
+@icon-print: "\e931";
+@icon-required: "\e932";
+@icon-reset: "\e933";
+@icon-rss-logo: "\e934";
+@icon-rss: "\e935";
+@icon-search: "\e936";
+@icon-share: "\e937";
+@icon-success: "\e938";
+@icon-twitter: "\e939";
+@icon-tws: "\e93a";
+@icon-up: "\e93b";
+@icon-vk: "\e93c";
+@icon-vks: "\e93d";
+@icon-zoom-in: "\e93e";
+@icon-zoom-out: "\e93f";
 
+// Font family "IconsSite"
 @font-face {
 	font-family:"IconsSite";
-	src:url("@{fontpath}/IconsSite.woff2?a3103f85e0301d137553c5a0673e54c3") format("woff2"),
-		url("@{fontpath}/IconsSite.woff?a3103f85e0301d137553c5a0673e54c3") format("woff"),
-		url("@{fontpath}/IconsSite.ttf?a3103f85e0301d137553c5a0673e54c3") format("truetype");
+	src:url("@{fontpath}/IconsSite.woff?@{hashes}") format("woff"),
+		url("@{fontpath}/IconsSite.woff2?@{hashes}") format("woff2"),
+		url("@{fontpath}/IconsSite.ttf?@{hashes}") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 	font-display: swap;
 }
 
+// Classes all icons
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
 	font-family: "IconsSite" !important;
@@ -85,7 +89,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+// Classes icons
 .icon-begin {
 	&:before {
 		content: @icon-begin;
@@ -129,6 +133,11 @@
 .icon-checkbox {
 	&:before {
 		content: @icon-checkbox;
+	}
+}
+.icon-checks {
+	&:before {
+		content: @icon-checks;
 	}
 }
 .icon-chrome {

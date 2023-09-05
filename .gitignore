@@ -119,6 +119,7 @@ comps/**/*
 
 /site/assets/comon/js/Hyphenopoly/**/*
 
+!.editorconfig
 !.gitignore
 !site/favicon.ico
 !site/assets/tvs/multitv/configs/carausel.config.inc.php

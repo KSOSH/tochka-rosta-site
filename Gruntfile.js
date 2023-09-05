@@ -24,11 +24,9 @@ module.exports = function(grunt) {
 		assets: "assets/templates/projectsoft",
 		dist: "site/assets/templates/projectsoft",
 		default: [
-			//"clean",
 			"concat",
 			"uglify",
-			//"webfont",
-			"ttf2eot",
+			"webfont",
 			"ttf2woff",
 			"ttf2woff2",
 			"imagemin",
@@ -42,7 +40,6 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		less: [
-			//"clean",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -51,14 +48,12 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		js: [
-			//"clean",
 			"concat",
 			"uglify",
 			"copy",
 			"pug"
 		],
 		pug: [
-			//"clean",
 			"pug"
 		],
 		images: [
@@ -72,22 +67,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		fonts: [
-			//"clean",
-			"ttf2eot",
-			"ttf2woff",
-			"ttf2woff2",
-			"less",
-			"autoprefixer",
-			"group_css_media_queries",
-			"replace",
-			"cssmin",
-			"copy:fonts",
-			"pug"
-		],
-		glyph: [
-			//"clean",
-			//"webfont",
-			"ttf2eot",
+			"webfont",
 			"ttf2woff",
 			"ttf2woff2",
 			"less",
@@ -99,7 +79,6 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		speed: [
-			//"clean",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -193,7 +172,7 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		/*webfont: {
+		webfont: {
 			icons: {
 				src: 'src/glyph/*.svg',
 				dest: 'src/fonts/',
@@ -202,10 +181,11 @@ module.exports = function(grunt) {
 					relativeFontPath: '@{fontpath}',
 					destLess: 'src/less/fonts',
 					font: 'IconsSite',
-					types: 'ttf,woff,woff2',
+					types: 'ttf',
 					fontFamilyName: 'IconsSite',
 					stylesheets: ['less'],
 					syntax: 'bootstrap',
+					engine: 'node',
 					execMaxBuffer: 1024 * 200,
 					htmlDemo: false,
 					version: gc.fontVers,
@@ -220,7 +200,7 @@ module.exports = function(grunt) {
 					template: 'src/less/fonts/font-build.template'
 				}
 			},
-		},*/
+		},
 		less: {
 			css: {
 				options : {
@@ -495,12 +475,6 @@ module.exports = function(grunt) {
 				],
 				tasks: gc.fonts
 			},
-			//glyph : {
-			//	files: [
-			//		'src/glyph/**/*.*',
-			//	],
-			//	tasks: gc.glyph
-			//}
 		}
 	});
 	grunt.registerTask('default',	gc.default);
@@ -508,7 +482,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('css',		gc.less);
 	grunt.registerTask('images',	gc.images);
 	grunt.registerTask('js',		gc.js);
-	//grunt.registerTask('glyph',		gc.glyph);
 	grunt.registerTask('fonts',		gc.fonts);
 	grunt.registerTask('html',		gc.pug);
 	grunt.registerTask('speed',		gc.speed);
