@@ -27,4 +27,4 @@ jobs:
         npm install -g bower
         npm install --legacy-peer-deps
         bower install
-        grunt
+        grunt -v concat uglify webfont ttf2woff ttf2woff2 less autoprefixer group_css_media_queries replace cssmin copy pug
