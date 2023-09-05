@@ -332,12 +332,6 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		ttf2eot: {
-			default: {
-				src: 'src/fonts/*.ttf',
-				dest: '<%= globalConfig.dist %>/fonts/'
-			}
-		},
 		ttf2woff: {
 			default: {
 				src: 'src/fonts/*.ttf',
