@@ -5,5 +5,23 @@
 			"name": "Сайт «Точка Роста» ГБОУ СОШ пос. Комсомольский",
 			"path": "."
 		}
+	],
+	"settings":  {
+		"font_size": 12,
+		"tab_size": 4
+	},
+	"build_systems": [
+		{
+			"name": "Запуск проекта",
+			"working_dir": "${project_path}",
+			"cmd": ["start", "grunt", "work", "-v"],
+			"shell": true
+		},
+		{
+			"name": "Запуск полной сборки проекта",
+			"working_dir": "${project_path}",
+			"cmd": ["start", "grunt", "-v"],
+			"shell": true
+		},
 	]
 }
