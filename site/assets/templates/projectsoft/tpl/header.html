@@ -20,7 +20,12 @@
 				<div class="navigation-menu-button">{{@FILE assets/templates/projectsoft/images/burger.svg}}</div>
 				<div class="navigation-menu-wrapper row">
 					<nav>
-						[[DLMenu?
+						[!DocLister?
+							&controller=`site_content_menu`
+							&addWhereList=`c.hidemenu = 0`
+							&sortBy=`c.menuindex`
+							&sortDir=`ASC`
+							&depth=`0`
 							&parents=`0`
 							&maxDepth=`1`
 							&showParent=`0`
@@ -39,7 +44,7 @@
 							&oddClass=``
 							&evenClass=``
 							&debug=`[(debug)]`
-						]]
+						!]
 					</nav>
 				</div>
 			</div>

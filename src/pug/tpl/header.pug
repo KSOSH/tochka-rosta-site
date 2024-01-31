@@ -33,7 +33,12 @@ header.head
 					|{{@FILE assets/templates/projectsoft/images/burger.svg}}
 				.navigation-menu-wrapper.row
 					nav
-						|[[DLMenu?
+						|[!DocLister?
+						|	&controller=`site_content_menu`
+						|	&addWhereList=`c.hidemenu = 0`
+						|	&sortBy=`c.menuindex`
+						|	&sortDir=`ASC`
+						|	&depth=`0`
 						|	&parents=`0`
 						|	&maxDepth=`1`
 						|	&showParent=`0`
@@ -52,7 +57,7 @@ header.head
 						|	&oddClass=``
 						|	&evenClass=``
 						|	&debug=`[(debug)]`
-						|]]
+						|!]
 		|<@IF:[*id:is('[(site_start)]')*]>
 		|  
 		|<@ELSE>
