@@ -733,7 +733,7 @@
                 alert(confirm('Браузер не поддерживается.'));
             } else {
                 if (Cookies.get('bvi-panel-active') === 'true') {
-                    $(selector).addClass('bvi-hide').after($('<a href="#" class="bvi-panel-close" title="Обычная версия сайта">Обычная версия сайта</a>'));
+                    $(selector).addClass('bvi-hide').after($('<a href="#" class="bvi-panel-close btn" title="Обычная версия сайта">Обычная версия сайта</a>'));
                     panel();
                     bvi_tts_player();
                     bvi_click();

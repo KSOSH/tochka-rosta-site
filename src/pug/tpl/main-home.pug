@@ -11,7 +11,7 @@ main.main
 				|[*content*]
 	|<@ENDIF>
 	|<@IF:[*id:is('[(site_start)]')*]>
-	|[[DocLister?
+	|[!DocLister?
 	|	&parents=`6`
 	|	&display=`5`
 	|	&tvList=`imageSoc, news_date`
@@ -21,13 +21,13 @@ main.main
 	|	&sortDir=`DESC`
 	|	&tvSortType=`TVDATETIME`
 	|	&prepare=`\ProjectSoft\PrepareDL::prepareItem`
-	|	&noneTPL=`@CODE:<span></span>`
-	|	&ownerTPL=`@FILE:projectsoft/tpl/home_news`
-	|	&tpl=`@FILE:projectsoft/tpl/news_tpl`
+	|	&noneTPL=`@CODE: <span></span>`
+	|	&ownerTPL=`@FILE: projectsoft/tpl/home_news`
+	|	&tpl=`@FILE: projectsoft/tpl/news_tpl`
 	|	&showParent=`0`
 	|	&urlScheme=`full`
 	|	&noneWrapOuter=`0`
-	|	&&debug=`[(debug)]`
-	|]]
+	|	&debug=`[(debug)]`
+	|!]
 	<@ENDIF>
 	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}
