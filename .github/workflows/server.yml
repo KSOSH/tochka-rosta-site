@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@latest
 
       - name: Deploy to Hosting
-        uses: SamKirkland/FTP-Deploy-Action@latest
+        uses: SamKirkland/FTP-Deploy-Action@v2.1
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
