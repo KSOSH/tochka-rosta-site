@@ -11,13 +11,17 @@ main.main
 					time.icon-calendar(datetime="[*news_date*]")
 						|[[aDate? &date=`[*news_date*]`]] года
 				|[*content*]
-				p.article-autor
-					strong
-						|[*news_person*]
+				|<@IF:[*EvoVideo:isNotEmpty*]>
+				.evovideo(style="margin-bottom: 1em;")
+					|[[GetEvoVideo? &url=`[*EvoVideo*]`]]
+				|<@ENDIF>
 				|[[multiTV?
 				|	&tvName=`photogallery`
 				|	&docid=`[*id*]`
 				|	&display=`all`
 				|	&emptyOutput=`1`
 				|]]
+				p.article-autor
+					strong
+						|[*news_person*]
 	|{{@FILE assets/templates/projectsoft/tpl/govlist.html}}

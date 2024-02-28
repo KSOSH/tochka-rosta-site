@@ -13,12 +13,15 @@
 				<p class="article-time">
 					<time class="icon-calendar" datetime="[*news_date*]">[[aDate? &date=`[*news_date*]`]] года</time>
 				</p>[*content*]
-				<p class="article-autor"><strong>[*news_person*]</strong></p>[[multiTV?
+				<@IF:[*EvoVideo:isNotEmpty*]>
+				<div class="evovideo" style="margin-bottom: 1em;">[[GetEvoVideo? &url=`[*EvoVideo*]`]]</div><@ENDIF>
+				[[multiTV?
 					&tvName=`photogallery`
 					&docid=`[*id*]`
 					&display=`all`
 					&emptyOutput=`1`
 				]]
+				<p class="article-autor"><strong>[*news_person*]</strong></p>
 			</div>
 		</div>
 	</article>{{@FILE assets/templates/projectsoft/tpl/govlist.html}}
