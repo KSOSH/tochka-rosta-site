@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4.1.1
 
       - name: Deploy to Hosting
-        uses: SamKirkland/FTP-Deploy-Action@v2.1
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -26,7 +26,7 @@ jobs:
           local-dir: ./site/
           state-name: .status.json
       - name: Remove Status
-        uses: StephanThierry/ftp-delete-action@latest
+        uses: StephanThierry/ftp-delete-action@v2.1
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
