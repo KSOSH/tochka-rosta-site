@@ -37,7 +37,7 @@
 		"grunt-replace": "^2.0.1",
 		"grunt-tinyimg": "^1.0.0",
 		"grunt-ttf2woff": "^1.0.1",
-		"grunt-ttf2woff2": "^1.0.1",
+		"grunt-ttf2woff2": "1.0.1",
 		"grunt-webfont": "^1.7.2",
 		"less-plugin-npm-import": "^2.1.0",
 		"load-grunt-tasks": "^5.1.0",
